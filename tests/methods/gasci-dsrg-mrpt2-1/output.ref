@@ -1,9 +1,9 @@
 
     -----------------------------------------------------------------------
           Psi4: An Open-Source Ab Initio Electronic Structure Package
-                               Psi4 undefined 
+                               Psi4 1.4a3.dev225 
 
-                         Git: Rev {x2c-norm} b906495 
+                         Git: Rev {HEAD} 7105e37 
 
 
     D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
@@ -30,11 +30,11 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Monday, 28 December 2020 05:21PM
+    Psi4 started on: Friday, 30 July 2021 07:32PM
 
-    Process ID: 32152
-    Host:       Yorks-Mac.local
-    PSIDATADIR: /Users/york/src/psi4new/psi4/share/psi4
+    Process ID: 17765
+    Host:       DESKTOP-SQPD2D3
+    PSIDATADIR: /home/mhuang/psi4_install/share/psi4
     Memory:     500.0 MiB
     Threads:    1
     
@@ -115,18 +115,18 @@ Econv = energy('forte', ref_wfn=wfn)
 compare_values(Ecisdpt2, Econv, 8, "CD-VCISD-DSRG-MRPT2 (spin-adapted) energy")
 --------------------------------------------------------------------------
 
-Scratch directory: /Users/york/scratch/psi4/
+Scratch directory: /tmp/
 
-*** tstart() called on Yorks-Mac.local
-*** at Mon Dec 28 17:21:55 2020
+*** tstart() called on DESKTOP-SQPD2D3
+*** at Fri Jul 30 19:32:26 2021
 
    => Loading Basis Set <=
 
     Name: CC-PVDZ
     Role: ORBITAL
     Keyword: BASIS
-    atoms 1-4 entry H          line    22 file /Users/york/src/psi4new/psi4/share/psi4/basis/cc-pvdz.gbs 
-    atoms 5-6 entry C          line   138 file /Users/york/src/psi4new/psi4/share/psi4/basis/cc-pvdz.gbs 
+    atoms 1-4 entry H          line    22 file /home/mhuang/psi4_install/share/psi4/basis/cc-pvdz.gbs 
+    atoms 5-6 entry C          line   138 file /home/mhuang/psi4_install/share/psi4/basis/cc-pvdz.gbs 
 
 
          ---------------------------------------------------------
@@ -150,14 +150,14 @@ Scratch directory: /Users/york/scratch/psi4/
          H            0.000000000000    -0.923274000000     1.238289000000     1.007825032230
          H           -0.000000000000     0.923274000000    -1.238289000000     1.007825032230
          H            0.000000000000    -0.923274000000    -1.238289000000     1.007825032230
-         C            0.000000000000     0.000000000000     0.668188000000    12.000000000000
-         C            0.000000000000     0.000000000000    -0.668188000000    12.000000000000
+         C           -0.000000000000     0.000000000000     0.668188000000    12.000000000000
+         C           -0.000000000000     0.000000000000    -0.668188000000    12.000000000000
 
   Running in d2h symmetry.
 
   Rotational constants: A =      4.90558  B =      0.99768  C =      0.82907 [cm^-1]
   Rotational constants: A = 147065.51749  B =  29909.67979  C =  24854.79663 [MHz]
-  Nuclear repulsion =   33.298097793168211
+  Nuclear repulsion =   33.298097793168218
 
   Charge       = 0
   Multiplicity = 1
@@ -181,7 +181,7 @@ Scratch directory: /Users/york/scratch/psi4/
   Basis Set: CC-PVDZ
     Blend: CC-PVDZ
     Number of shells: 24
-    Number of basis function: 48
+    Number of basis functions: 48
     Number of Cartesian functions: 50
     Spherical Harmonics?: true
     Max angular momentum: 2
@@ -241,21 +241,21 @@ Scratch directory: /Users/york/scratch/psi4/
 
                         Total Energy        Delta E     RMS |[F,P]|
 
-   @RHF iter SAD:   -77.31850383269976   -7.73185e+01   0.00000e+00 
+   @RHF iter SAD:   -77.31850383269972   -7.73185e+01   0.00000e+00 
    @RHF iter   1:   -77.98838463929258   -6.69881e-01   1.41399e-02 DIIS
-   @RHF iter   2:   -78.03359211602415   -4.52075e-02   5.26399e-03 DIIS
-   @RHF iter   3:   -78.03946058615119   -5.86847e-03   1.00887e-03 DIIS
+   @RHF iter   2:   -78.03359211602424   -4.52075e-02   5.26399e-03 DIIS
+   @RHF iter   3:   -78.03946058615128   -5.86847e-03   1.00887e-03 DIIS
    @RHF iter   4:   -78.03984545093790   -3.84865e-04   8.33245e-05 DIIS
-   @RHF iter   5:   -78.03984835119638   -2.90026e-06   9.35680e-06 DIIS
-   @RHF iter   6:   -78.03984838903207   -3.78357e-08   1.03901e-06 DIIS
-   @RHF iter   7:   -78.03984838944999   -4.17913e-10   1.94464e-07 DIIS
-   @RHF iter   8:   -78.03984838946634   -1.63567e-11   2.47375e-08 DIIS
-   @RHF iter   9:   -78.03984838946664   -2.98428e-13   4.17855e-09 DIIS
-   @RHF iter  10:   -78.03984838946658    5.68434e-14   3.22542e-10 DIIS
-   @RHF iter  11:   -78.03984838946671   -1.27898e-13   3.21423e-11 DIIS
-   @RHF iter  12:   -78.03984838946667    4.26326e-14   6.32843e-12 DIIS
-   @RHF iter  13:   -78.03984838946664    2.84217e-14   1.11426e-12 DIIS
-   @RHF iter  14:   -78.03984838946664    0.00000e+00   1.57318e-13 DIIS
+   @RHF iter   5:   -78.03984835119643   -2.90026e-06   9.35680e-06 DIIS
+   @RHF iter   6:   -78.03984838903207   -3.78356e-08   1.03901e-06 DIIS
+   @RHF iter   7:   -78.03984838944996   -4.17884e-10   1.94464e-07 DIIS
+   @RHF iter   8:   -78.03984838946636   -1.63993e-11   2.47375e-08 DIIS
+   @RHF iter   9:   -78.03984838946667   -3.12639e-13   4.17855e-09 DIIS
+   @RHF iter  10:   -78.03984838946663    4.26326e-14   3.22541e-10 DIIS
+   @RHF iter  11:   -78.03984838946667   -4.26326e-14   3.21424e-11 DIIS
+   @RHF iter  12:   -78.03984838946670   -2.84217e-14   6.32876e-12 DIIS
+   @RHF iter  13:   -78.03984838946661    8.52651e-14   1.11461e-12 DIIS
+   @RHF iter  14:   -78.03984838946674   -1.27898e-13   1.57535e-13 DIIS
   Energy and wave function converged.
 
 
@@ -291,14 +291,14 @@ Scratch directory: /Users/york/scratch/psi4/
              Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u 
     DOCC [     3,    0,    0,    1,    0,    2,    1,    1 ]
 
-  @RHF Final Energy:   -78.03984838946664
+  @RHF Final Energy:   -78.03984838946674
 
    => Energetics <=
 
-    Nuclear Repulsion Energy =             33.2980977931682105
-    One-Electron Energy =                -169.8966439220453992
-    Two-Electron Energy =                  58.5586977394105475
-    Total Energy =                        -78.0398483894666413
+    Nuclear Repulsion Energy =             33.2980977931682176
+    One-Electron Energy =                -169.8966439220454561
+    Two-Electron Energy =                  58.5586977394105048
+    Total Energy =                        -78.0398483894667407
 
 Computation Completed
 
@@ -308,35 +308,35 @@ Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 Properties computed using the SCF density matrix
 
   Nuclear Dipole Moment: [e a0]
-     X:     0.0000      Y:     0.0000      Z:     0.0000
+     X:    -0.0000      Y:     0.0000      Z:     0.0000
 
   Electronic Dipole Moment: [e a0]
      X:     0.0000      Y:     0.0000      Z:     0.0000
 
   Dipole Moment: [e a0]
-     X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
+     X:    -0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
   Dipole Moment: [D]
-     X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
+     X:    -0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on Yorks-Mac.local at Mon Dec 28 17:21:56 2020
+*** tstop() called on DESKTOP-SQPD2D3 at Fri Jul 30 19:32:27 2021
 Module time:
-	user time   =       0.61 seconds =       0.01 minutes
+	user time   =       0.65 seconds =       0.01 minutes
 	system time =       0.03 seconds =       0.00 minutes
 	total time  =          1 seconds =       0.02 minutes
 Total time:
-	user time   =       0.61 seconds =       0.01 minutes
+	user time   =       0.65 seconds =       0.01 minutes
 	system time =       0.03 seconds =       0.00 minutes
 	total time  =          1 seconds =       0.02 minutes
 
-Scratch directory: /Users/york/scratch/psi4/
+Scratch directory: /tmp/
 
   Forte
   ----------------------------------------------------------------------------
   A suite of quantum chemistry methods for strongly correlated electrons
 
-    git branch: gasci-dsrg-semi - git commit: 6cd1a499
+    git branch: HEAD - git commit: 546ee104
 
   Developed by:
     Francesco A. Evangelista, Chenyang Li, Kevin P. Hannon,
@@ -344,7 +344,7 @@ Scratch directory: /Users/york/scratch/psi4/
     Nan He, Nicholas Stair, Shuhe Wang, Renke Huang
   ----------------------------------------------------------------------------
 
-  Size of Determinant class: 256 bits
+  Size of Determinant class: 128 bits
 
   Preparing forte objects from a Psi4 Wavefunction object
   Read options for space FROZEN_DOCC
@@ -372,15 +372,13 @@ Scratch directory: /Users/york/scratch/psi4/
     RESTRICTED_UOCC     8     2     3     5     2     8     5     3    36
     FROZEN_UOCC         0     0     0     0     0     0     0     0     0
     Total              11     2     4     7     2    11     7     4    48
-  -------------------------------------------------------------------------
-
-   => Loading Basis Set <=
+  -------------------------------------------------------------------------   => Loading Basis Set <=
 
     Name: CC-PVDZ
     Role: ORBITAL
     Keyword: BASIS
-    atoms 1-4 entry H          line    22 file /Users/york/src/psi4new/psi4/share/psi4/basis/cc-pvdz.gbs 
-    atoms 5-6 entry C          line   138 file /Users/york/src/psi4new/psi4/share/psi4/basis/cc-pvdz.gbs 
+    atoms 1-4 entry H          line    22 file /home/mhuang/psi4_install/share/psi4/basis/cc-pvdz.gbs 
+    atoms 5-6 entry C          line   138 file /home/mhuang/psi4_install/share/psi4/basis/cc-pvdz.gbs 
 
 
   Checking orbital orthonormality against current geometry ... Done (OK)
@@ -390,9 +388,11 @@ Scratch directory: /Users/york/scratch/psi4/
     Name: STO-3G
     Role: ORBITAL
     Keyword: MINAO_BASIS
-    atoms 1-4 entry H          line    19 file /Users/york/src/psi4new/psi4/share/psi4/basis/sto-3g.gbs 
-    atoms 5-6 entry C          line    61 file /Users/york/src/psi4new/psi4/share/psi4/basis/sto-3g.gbs 
+    atoms 1-4 entry H          line    19 file /home/mhuang/psi4_install/share/psi4/basis/sto-3g.gbs 
+    atoms 5-6 entry C          line    61 file /home/mhuang/psi4_install/share/psi4/basis/sto-3g.gbs 
 
+
+  ==> List of Planes Requested <==
 
   Forte will use psi4 integrals
 
@@ -401,7 +401,7 @@ Scratch directory: /Users/york/scratch/psi4/
   Basis Set: CC-PVDZ
     Blend: CC-PVDZ
     Number of shells: 24
-    Number of basis function: 48
+    Number of basis functions: 48
     Number of Cartesian functions: 50
     Spherical Harmonics?: true
     Max angular momentum: 2
@@ -454,15 +454,15 @@ Scratch directory: /Users/york/scratch/psi4/
 	Starting second half-transformation.
 	Two-electron integral transformation complete.
 
-  Integral transformation done. 0.05866730 s
+  Integral transformation done. 0.11092270 s
   Reading the two-electron integrals from disk
   Size of two-electron integrals:   0.118652 GB
-  Timing for conventional integral transformation:            0.199 s.
-  Frozen-core energy         -78.536477455854225 a.u.
+  Timing for conventional integral transformation:            0.280 s.
+  Frozen-core energy         -78.536477455854310 a.u.
   Timing for frozen one-body operator:                        0.002 s.
   Resorting integrals after freezing core.
-  Timing for freezing core and virtual orbitals:              0.056 s.
-  Timing for computing conventional integrals:                0.255 s.
+  Timing for freezing core and virtual orbitals:              0.194 s.
+  Timing for computing conventional integrals:                0.475 s.
 
   ==> Summary of Active Space Solver Input <==
 
@@ -476,12 +476,10 @@ Scratch directory: /Users/york/scratch/psi4/
     --------------------------
 
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
                Selected Configuration Interaction Excited States
-  written by Jeffrey B. Schriber, Tianyuan Zhang and Francesco A. Evangelista
--------------------------------------------------------------------------------
-
-  ==> Reference Information <==
+  written by Jeffrey B. Schriber, Tianyuan Zhang, and Francesco A. Evangelista
+--------------------------------------------------------------------------------
 
   ==> Calculation Information <==
 
@@ -492,7 +490,7 @@ Scratch directory: /Users/york/scratch/psi4/
     Ms                                       0
     Excited Algorithm                        NONE
   -----------------------------------------------------------------
-  Using 1 threads
+  Using 1 thread(s)
   Computing wavefunction for root 0
 
         ---------------------------------------------------------------
@@ -512,6 +510,8 @@ Scratch directory: /Users/york/scratch/psi4/
     Symmetry                                 5    
     Number of roots                          1    
     Root used for properties                 0    
+    Roots used for averaging                 1    
+    Root averaging offset                    0    
     Sigma (Eh)                               0.00e+00
     Gamma (Eh^(-1))                          1.00e+00
     Convergence threshold                    1.00e-09
@@ -521,53 +521,78 @@ Scratch directory: /Users/york/scratch/psi4/
     Project out spin contaminants            True
     Enforce spin completeness of basis       True
     Enforce complete aimed selection         True
+    Multiroot averaging                      Average
   -----------------------------------------------------------------
+  Number of active orbitals: 6
   Number of active alpha electrons: 2
   Number of active beta electrons: 2
-  Maximum reference space size: 1000
-  The maximum number of electrons in GAS1 is 4 
-  The minimum number of electrons in GAS1 is 0
-  The maximum number of electrons in GAS2 is 1
-  The minimum number of electrons in GAS2 is 0
-  
-  Possible electron occupations in the GAS 
-  GAS1_A  GAS1_B  GAS2_A  GAS2_B  
-     2       2       0       0    
-     2       1       0       1    
-     1       2       1       0    
 
-  GAS Orbital Energies
-  GAS   Energies    Orb 
-  1  -0.583296811  0 
-  1  -0.373390172  5 
-  2   0.167256582  1 
-  2   0.303090334  2 
-  2   0.237643556  3 
-  2   0.232823472  4 
+  ==> GAS Orbital Energies from SCF <==
+
+    GAS        Energy  Index
+    ------------------------
+     1    -0.58329681      0
+     1    -0.37339017      5
+     2     0.16725658      1
+     2     0.30309033      2
+     2     0.23764356      3
+     2     0.23282347      4
+    ------------------------
+
+  ==> Number of Electrons in GAS <==
+
+    GAS  MAX  MIN
+    -------------
+      1    4    0
+      2    1    0
+    -------------
+
+  ==> Possible Electron Occupations in GAS <==
+
+    Config.  1_A  1_B  2_A  2_B
+    ---------------------------
+         1     2    2    0    0
+         2     2    1    0    1
+         3     1    2    1    0
+    ---------------------------
+    n_A/B: # of alpha/beta electrons in GASn
+
+  ==> Building GAS Determinants <==
+
+    Config.  #Determinants     Time/s
+    ---------------------------------
+         1               0  7.410e-05
+         2               2  3.790e-05
+         3               2  3.380e-05
+    ---------------------------------
+    Total:               4  1.935e-04
+    ---------------------------------
+
 
   ---------------------------------- Cycle 0 -----------------------------------
 
-
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 4
   Spin-complete dimension of the P space: 4 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000009 s
-        β          0.000008 s
-        αα         0.000005 s
-        ββ         0.000006 s
-        αβ         0.000014 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          2.050e-05 seconds
+        β          1.240e-05 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         1.720e-05 seconds
+        ββ         7.100e-06 seconds
+        αβ         1.020e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 2 roots with 2S+1 = 1 *
   Found 2 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000232 s
+  Time spent diagonalizing H:   0.000399 s
 
     P-space  CI Energy Root   0        = -77.686293103453 Eh =   0.0000 eV, S^2 = 0.000000
 
@@ -575,75 +600,84 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000032
-  Time spent merging thread F spaces:             0.000001
+  Time spent forming F space:             0.000028
+  Time spent merging thread F spaces:             0.000029
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000065
-  Spin-complete dimension of the PQ space: 4
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  4
+  Dimension of the PQ space (spin-complete) : 4
+  Time spent building the model space: 0.000143
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000007 s
-        β          0.000007 s
-        αα         0.000005 s
-        ββ         0.000004 s
-        αβ         0.000013 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          7.700e-06 seconds
+        β          7.100e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         7.000e-06 seconds
+        ββ         6.400e-06 seconds
+        αβ         9.500e-06 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 2 roots with 2S+1 = 1 *
   Found 2 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000160 s
+  Total time spent diagonalizing H:   0.000229 s
 
     PQ-space CI Energy Root   0        = -77.686293103453 Eh =   0.0000 eV, S^2 = 0.000000
     PQ-space CI Energy + EPT2 Root   0 = -77.686293103453 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.500000000  
-     1         2         1         0        0.500000000  
 
-           3                  1            1.000000000  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  50.00000000%
+         3     1    2    1    0  50.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  3         1   100.00000000%
+                  4         0     0.00000000%
+    -----------------------------------------
 
   ==> Pruning the Q space <==
 
-  Cycle 0 took: 0.000750 s
+  Cycle 0 took: 0.001302 s
+
 
   ---------------------------------- Cycle 1 -----------------------------------
-
 
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 4
   Spin-complete dimension of the P space: 4 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000007 s
-        β          0.000007 s
-        αα         0.000005 s
-        ββ         0.000004 s
-        αβ         0.000013 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          7.600e-06 seconds
+        β          7.000e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         6.900e-06 seconds
+        ββ         6.500e-06 seconds
+        αβ         9.800e-06 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 2 roots with 2S+1 = 1 *
   Found 2 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000152 s
+  Time spent diagonalizing H:   0.000220 s
 
     P-space  CI Energy Root   0        = -77.686293103453 Eh =   0.0000 eV, S^2 = 0.000000
 
@@ -651,56 +685,58 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000026
-  Time spent merging thread F spaces:             0.000001
+  Time spent forming F space:             0.000012
+  Time spent merging thread F spaces:             0.000002
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000053
-  Spin-complete dimension of the PQ space: 4
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  4
+  Dimension of the PQ space (spin-complete) : 4
+  Time spent building the model space: 0.000080
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000007 s
-        β          0.000007 s
-        αα         0.000004 s
-        ββ         0.000004 s
-        αβ         0.000012 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          7.300e-06 seconds
+        β          6.900e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         6.800e-06 seconds
+        ββ         6.300e-06 seconds
+        αβ         9.000e-06 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 2 roots with 2S+1 = 1 *
   Found 2 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000153 s
+  Total time spent diagonalizing H:   0.000225 s
 
     PQ-space CI Energy Root   0        = -77.686293103453 Eh =   0.0000 eV, S^2 = 0.000000
     PQ-space CI Energy + EPT2 Root   0 = -77.686293103453 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.500000000  
-     1         2         1         0        0.500000000  
 
-           3                  1            1.000000000  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  50.00000000%
+         3     1    2    1    0  50.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  3         1   100.00000000%
+                  4         0     0.00000000%
+    -----------------------------------------
   ***** Calculation Converged *****
 
   ==> ACI Natural Orbitals <==
 
-
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000007 s
-        β          0.000006 s
         1Ag     1.998159      1B3u    1.001841      1B2g    0.998159  
         1B1u    0.001841      1B2u    0.000000      1B3g    0.000000  
 
@@ -724,39 +760,39 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> Energy Summary <==
 
-    Multi.(2ms)  Irrep.  No.               Energy
-    ---------------------------------------------
-       1  (  0)   B1u     0      -77.686293103453
-    ---------------------------------------------
+    Multi.(2ms)  Irrep.  No.               Energy      <S^2>
+    --------------------------------------------------------
+       1  (  0)   B1u     0      -77.686293103453   0.000000
+    --------------------------------------------------------
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000000 s
-        β          0.000000 s
-        αα         0.000000 s
-        ββ         0.000000 s
-        αβ         0.000000 s
-  --------------------------------
-  Computing 3-list...     done (0.00003 s)
+  ==> Computing 1 Coupling Lists <==
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000008 s
-        β          0.000007 s
-  1-RDM  took 0.000057 s (determinant)
-        αα         0.000005 s
-        ββ         0.000004 s
-        αβ         0.000013 s
-  --------------------------------
-  2-RDMS took 0.000069 s (determinant)
-  3-RDMs took 0.000305 s (determinant)
+        α          5.500e-06 seconds
+        β          5.200e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         5.200e-06 seconds
+        ββ         5.200e-06 seconds
+        αβ         5.200e-06 seconds
+  Computing 3-list...    
+
+  ==> Computing 3 Coupling Lists <==
+
+        ααα        5.400e-06 seconds
+        ααβ        1.600e-05 seconds
+        αββ        1.030e-05 seconds
+        βββ        5.300e-06 seconds done (0.00013 s)
+  1-RDM  took 0.000049 s (determinant)
+  2-RDMS took 0.000072 s (determinant)
+  3-RDMs took 0.000206 s (determinant)
 
        -----------------------------------------------------------------
                             Semi-Canonical Orbitals
          Chenyang Li, Jeffrey B. Schriber and Francesco A. Evangelista
        -----------------------------------------------------------------
 
-  Took 0.012213 s to build Fock matrix
+  Took 0.009951 s to build Fock matrix
 
   ==> Checking Fock Matrix Diagonal Blocks <==
 
@@ -778,20 +814,20 @@ Scratch directory: /Users/york/scratch/psi4/
 	Starting second half-transformation.
 	Two-electron integral transformation complete.
 
-  Integral transformation done. 0.04851581 s
+  Integral transformation done. 0.09677590 s
   Reading the two-electron integrals from disk
   Size of two-electron integrals:   0.118652 GB
-  Timing for conventional integral transformation:            0.191 s.
-  Frozen-core energy         -78.536477455854225 a.u.
+  Timing for conventional integral transformation:            0.261 s.
+  Frozen-core energy         -78.536477455854310 a.u.
   Timing for frozen one-body operator:                        0.002 s.
   Resorting integrals after freezing core.
-  Timing for freezing core and virtual orbitals:              0.039 s.
-  Integrals update took     0.230 s.
+  Timing for freezing core and virtual orbitals:              0.194 s.
+  Integrals update took     0.455 s.
   Rotating RDMs using spin unrestricted formalism ...
     Transformed 1 RDMs.
     Transformed 2 RDMs.
     Transformed 3 RDMs.
-  Timing for semi-canonicalizing orbitals:                    0.526 s.
+  Timing for semi-canonicalizing orbitals:                    0.612 s.
 
   ==> Multireference Driven Similarity Renormalization Group <==
 
@@ -838,18 +874,18 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> Computing DSRG-MRPT2 ... <==
 
-    Computing T2 amplitudes                  ...  Done. Timing        0.037105 s
-    Computing T1 amplitudes                  ...  Done. Timing        0.001150 s
-    Renormalizing two-electron integrals     ...  Done. Timing        0.031675 s
-    Renormalizing Fock matrix elements       ...  Done. Timing        0.001243 s
-    Computing <[F, T1]>                      ...  Done. Timing        0.000805 s
-    Computing <[F, T2]>                      ...  Done. Timing        0.002989 s
-    Computing <[V, T1]>                      ...  Done. Timing        0.003309 s
-    Computing <[V, T2]> (C_2)^4              ...  Done. Timing        0.014766 s
-    Computing <[V, T2]> C_4 (C_2)^2 HH       ...  Done. Timing        0.005295 s
-    Computing <[V, T2]> C_4 (C_2)^2 PP       ...  Done. Timing        0.006657 s
-    Computing <[V, T2]> C_4 (C_2)^2 PH       ...  Done. Timing        0.021712 s
-    Computing <[V, T2]> C_6 C_2              ...  Done. Timing        0.029703 s
+    Computing T2 amplitudes                  ...  Done. Timing        0.038153 s
+    Computing T1 amplitudes                  ...  Done. Timing        0.000868 s
+    Renormalizing two-electron integrals     ...  Done. Timing        0.036847 s
+    Renormalizing Fock matrix elements       ...  Done. Timing        0.000816 s
+    Computing <[F, T1]>                      ...  Done. Timing        0.001550 s
+    Computing <[F, T2]>                      ...  Done. Timing        0.002123 s
+    Computing <[V, T1]>                      ...  Done. Timing        0.001568 s
+    Computing <[V, T2]> (C_2)^4              ...  Done. Timing        0.009364 s
+    Computing <[V, T2]> C_4 (C_2)^2 HH       ...  Done. Timing        0.003620 s
+    Computing <[V, T2]> C_4 (C_2)^2 PP       ...  Done. Timing        0.003164 s
+    Computing <[V, T2]> C_4 (C_2)^2 PH       ...  Done. Timing        0.011774 s
+    Computing <[V, T2]> C_6 C_2              ...  Done. Timing        0.028396 s
 
   ==> Excitation Amplitudes Summary <==
 
@@ -923,47 +959,48 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> DSRG-MRPT2 Energy Summary <==
 
-    E0 (reference)                 =    -77.686293103453153
-    <[F, T1]>                      =     -0.005201061369822
+    E0 (reference)                 =    -77.686293103453167
+    <[F, T1]>                      =     -0.005201061369820
     <[F, T2]>                      =      0.001772334249102
     <[V, T1]>                      =      0.001762774386889
-    <[V, T2]> (C_2)^4              =     -0.293747341760826
+    <[V, T2]> (C_2)^4              =     -0.293747341760824
     <[V, T2]> C_4 (C_2)^2 HH       =     -0.000345092574598
     <[V, T2]> C_4 (C_2)^2 PP       =     -0.008584739031614
-    <[V, T2]> C_4 (C_2)^2 PH       =     -0.004240385199066
+    <[V, T2]> C_4 (C_2)^2 PH       =     -0.004240385199067
     <[V, T2]> C_6 C_2              =      0.000025436783611
     <[V, T2]>                      =     -0.306892121782492
-    DSRG-MRPT2 correlation energy  =     -0.308558074516324
-    DSRG-MRPT2 total energy        =    -77.994851177969480
-    max(T1)                        =      0.011324203025635
+    DSRG-MRPT2 correlation energy  =     -0.308558074516322
+    DSRG-MRPT2 total energy        =    -77.994851177969494
+    max(T1)                        =      0.011324203025636
     max(T2)                        =      0.035705268413229
     ||T1||                         =      0.045492905265255
     ||T2||                         =      1.158993693248360
 
-  Energy took      0.194 s
+  Energy took      0.177 s
 
 
   ==> Total Timings (s) for Computing Commutators <==
 
              [H1, T1]    [H1, T2]    [H2, T1]    [H2, T2]
     -----------------------------------------------------
-    -> C0       0.001       0.003       0.003       0.078
+    -> C0       0.002       0.002       0.002       0.057
     -> C1       0.000       0.000       0.000       0.000
     -> C2                   0.000       0.000       0.000
     -----------------------------------------------------
 
 
-  Time to prepare integrals:        0.528 seconds
-  Time to run job          :        0.788 seconds
-  Total                    :        1.315 seconds    VCIS-DSRG-MRPT2 (spin-integrated) energy..............................................PASSED
+  Time to prepare integrals:        0.872 seconds
+  Time to run job          :        0.852 seconds
+  Total                    :        1.724 seconds
+    VCIS-DSRG-MRPT2 (spin-integrated) energy..............................................PASSED
 
-Scratch directory: /Users/york/scratch/psi4/
+Scratch directory: /tmp/
 
   Forte
   ----------------------------------------------------------------------------
   A suite of quantum chemistry methods for strongly correlated electrons
 
-    git branch: gasci-dsrg-semi - git commit: 6cd1a499
+    git branch: HEAD - git commit: 546ee104
 
   Developed by:
     Francesco A. Evangelista, Chenyang Li, Kevin P. Hannon,
@@ -971,7 +1008,7 @@ Scratch directory: /Users/york/scratch/psi4/
     Nan He, Nicholas Stair, Shuhe Wang, Renke Huang
   ----------------------------------------------------------------------------
 
-  Size of Determinant class: 256 bits
+  Size of Determinant class: 128 bits
 
   Preparing forte objects from a Psi4 Wavefunction object
   Read options for space FROZEN_DOCC
@@ -999,15 +1036,13 @@ Scratch directory: /Users/york/scratch/psi4/
     RESTRICTED_UOCC     8     2     3     5     2     8     5     3    36
     FROZEN_UOCC         0     0     0     0     0     0     0     0     0
     Total              11     2     4     7     2    11     7     4    48
-  -------------------------------------------------------------------------
-
-   => Loading Basis Set <=
+  -------------------------------------------------------------------------   => Loading Basis Set <=
 
     Name: CC-PVDZ
     Role: ORBITAL
     Keyword: BASIS
-    atoms 1-4 entry H          line    22 file /Users/york/src/psi4new/psi4/share/psi4/basis/cc-pvdz.gbs 
-    atoms 5-6 entry C          line   138 file /Users/york/src/psi4new/psi4/share/psi4/basis/cc-pvdz.gbs 
+    atoms 1-4 entry H          line    22 file /home/mhuang/psi4_install/share/psi4/basis/cc-pvdz.gbs 
+    atoms 5-6 entry C          line   138 file /home/mhuang/psi4_install/share/psi4/basis/cc-pvdz.gbs 
 
 
   Checking orbital orthonormality against current geometry ... Done (OK)
@@ -1017,9 +1052,11 @@ Scratch directory: /Users/york/scratch/psi4/
     Name: STO-3G
     Role: ORBITAL
     Keyword: MINAO_BASIS
-    atoms 1-4 entry H          line    19 file /Users/york/src/psi4new/psi4/share/psi4/basis/sto-3g.gbs 
-    atoms 5-6 entry C          line    61 file /Users/york/src/psi4new/psi4/share/psi4/basis/sto-3g.gbs 
+    atoms 1-4 entry H          line    19 file /home/mhuang/psi4_install/share/psi4/basis/sto-3g.gbs 
+    atoms 5-6 entry C          line    61 file /home/mhuang/psi4_install/share/psi4/basis/sto-3g.gbs 
 
+
+  ==> List of Planes Requested <==
 
   Forte will use psi4 integrals
 
@@ -1028,7 +1065,7 @@ Scratch directory: /Users/york/scratch/psi4/
   Basis Set: CC-PVDZ
     Blend: CC-PVDZ
     Number of shells: 24
-    Number of basis function: 48
+    Number of basis functions: 48
     Number of Cartesian functions: 50
     Spherical Harmonics?: true
     Max angular momentum: 2
@@ -1081,15 +1118,15 @@ Scratch directory: /Users/york/scratch/psi4/
 	Starting second half-transformation.
 	Two-electron integral transformation complete.
 
-  Integral transformation done. 0.05321801 s
+  Integral transformation done. 0.10027910 s
   Reading the two-electron integrals from disk
   Size of two-electron integrals:   0.118652 GB
-  Timing for conventional integral transformation:            0.201 s.
-  Frozen-core energy         -78.536477455854225 a.u.
+  Timing for conventional integral transformation:            0.291 s.
+  Frozen-core energy         -78.536477455854310 a.u.
   Timing for frozen one-body operator:                        0.002 s.
   Resorting integrals after freezing core.
-  Timing for freezing core and virtual orbitals:              0.039 s.
-  Timing for computing conventional integrals:                0.241 s.
+  Timing for freezing core and virtual orbitals:              0.193 s.
+  Timing for computing conventional integrals:                0.484 s.
 
   ==> Summary of Active Space Solver Input <==
 
@@ -1103,12 +1140,10 @@ Scratch directory: /Users/york/scratch/psi4/
     --------------------------
 
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
                Selected Configuration Interaction Excited States
-  written by Jeffrey B. Schriber, Tianyuan Zhang and Francesco A. Evangelista
--------------------------------------------------------------------------------
-
-  ==> Reference Information <==
+  written by Jeffrey B. Schriber, Tianyuan Zhang, and Francesco A. Evangelista
+--------------------------------------------------------------------------------
 
   ==> Calculation Information <==
 
@@ -1119,7 +1154,7 @@ Scratch directory: /Users/york/scratch/psi4/
     Ms                                       0
     Excited Algorithm                        NONE
   -----------------------------------------------------------------
-  Using 1 threads
+  Using 1 thread(s)
   Computing wavefunction for root 0
 
         ---------------------------------------------------------------
@@ -1139,6 +1174,8 @@ Scratch directory: /Users/york/scratch/psi4/
     Symmetry                                 5    
     Number of roots                          1    
     Root used for properties                 0    
+    Roots used for averaging                 1    
+    Root averaging offset                    0    
     Sigma (Eh)                               0.00e+00
     Gamma (Eh^(-1))                          1.00e+00
     Convergence threshold                    1.00e-09
@@ -1148,53 +1185,78 @@ Scratch directory: /Users/york/scratch/psi4/
     Project out spin contaminants            True
     Enforce spin completeness of basis       True
     Enforce complete aimed selection         True
+    Multiroot averaging                      Average
   -----------------------------------------------------------------
+  Number of active orbitals: 6
   Number of active alpha electrons: 2
   Number of active beta electrons: 2
-  Maximum reference space size: 1000
-  The maximum number of electrons in GAS1 is 4 
-  The minimum number of electrons in GAS1 is 0
-  The maximum number of electrons in GAS2 is 1
-  The minimum number of electrons in GAS2 is 0
-  
-  Possible electron occupations in the GAS 
-  GAS1_A  GAS1_B  GAS2_A  GAS2_B  
-     2       2       0       0    
-     2       1       0       1    
-     1       2       1       0    
 
-  GAS Orbital Energies
-  GAS   Energies    Orb 
-  1  -0.583296811  0 
-  1  -0.373390172  5 
-  2   0.167256582  1 
-  2   0.303090334  2 
-  2   0.237643556  3 
-  2   0.232823472  4 
+  ==> GAS Orbital Energies from SCF <==
+
+    GAS        Energy  Index
+    ------------------------
+     1    -0.58329681      0
+     1    -0.37339017      5
+     2     0.16725658      1
+     2     0.30309033      2
+     2     0.23764356      3
+     2     0.23282347      4
+    ------------------------
+
+  ==> Number of Electrons in GAS <==
+
+    GAS  MAX  MIN
+    -------------
+      1    4    0
+      2    1    0
+    -------------
+
+  ==> Possible Electron Occupations in GAS <==
+
+    Config.  1_A  1_B  2_A  2_B
+    ---------------------------
+         1     2    2    0    0
+         2     2    1    0    1
+         3     1    2    1    0
+    ---------------------------
+    n_A/B: # of alpha/beta electrons in GASn
+
+  ==> Building GAS Determinants <==
+
+    Config.  #Determinants     Time/s
+    ---------------------------------
+         1               0  4.120e-05
+         2               2  3.750e-05
+         3               2  3.470e-05
+    ---------------------------------
+    Total:               4  1.605e-04
+    ---------------------------------
+
 
   ---------------------------------- Cycle 0 -----------------------------------
 
-
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 4
   Spin-complete dimension of the P space: 4 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000008 s
-        β          0.000007 s
-        αα         0.000005 s
-        ββ         0.000004 s
-        αβ         0.000012 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          1.410e-05 seconds
+        β          7.300e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         7.600e-06 seconds
+        ββ         6.700e-06 seconds
+        αβ         9.700e-06 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 2 roots with 2S+1 = 1 *
   Found 2 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000199 s
+  Time spent diagonalizing H:   0.000271 s
 
     P-space  CI Energy Root   0        = -77.686293103453 Eh =   0.0000 eV, S^2 = 0.000000
 
@@ -1202,75 +1264,84 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000026
-  Time spent merging thread F spaces:             0.000001
+  Time spent forming F space:             0.000014
+  Time spent merging thread F spaces:             0.000003
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000055
-  Spin-complete dimension of the PQ space: 4
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  4
+  Dimension of the PQ space (spin-complete) : 4
+  Time spent building the model space: 0.000083
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000006 s
-        β          0.000006 s
-        αα         0.000004 s
-        ββ         0.000004 s
-        αβ         0.000012 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          7.400e-06 seconds
+        β          6.900e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         7.000e-06 seconds
+        ββ         6.500e-06 seconds
+        αβ         9.100e-06 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 2 roots with 2S+1 = 1 *
   Found 2 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000156 s
+  Total time spent diagonalizing H:   0.000279 s
 
     PQ-space CI Energy Root   0        = -77.686293103453 Eh =   0.0000 eV, S^2 = 0.000000
     PQ-space CI Energy + EPT2 Root   0 = -77.686293103453 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.500000000  
-     1         2         1         0        0.500000000  
 
-           3                  1            1.000000000  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  50.00000000%
+         3     1    2    1    0  50.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  3         1   100.00000000%
+                  4         0     0.00000000%
+    -----------------------------------------
 
   ==> Pruning the Q space <==
 
-  Cycle 0 took: 0.000660 s
+  Cycle 0 took: 0.001200 s
+
 
   ---------------------------------- Cycle 1 -----------------------------------
-
 
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 4
   Spin-complete dimension of the P space: 4 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000007 s
-        β          0.000007 s
-        αα         0.000004 s
-        ββ         0.000004 s
-        αβ         0.000012 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          7.700e-06 seconds
+        β          7.100e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         6.900e-06 seconds
+        ββ         6.400e-06 seconds
+        αβ         9.600e-06 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 2 roots with 2S+1 = 1 *
   Found 2 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000150 s
+  Time spent diagonalizing H:   0.000220 s
 
     P-space  CI Energy Root   0        = -77.686293103453 Eh =   0.0000 eV, S^2 = 0.000000
 
@@ -1278,56 +1349,58 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000025
-  Time spent merging thread F spaces:             0.000001
+  Time spent forming F space:             0.000013
+  Time spent merging thread F spaces:             0.000003
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000052
-  Spin-complete dimension of the PQ space: 4
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  4
+  Dimension of the PQ space (spin-complete) : 4
+  Time spent building the model space: 0.000080
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000007 s
-        β          0.000007 s
-        αα         0.000005 s
-        ββ         0.000004 s
-        αβ         0.000012 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          7.400e-06 seconds
+        β          7.000e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         6.900e-06 seconds
+        ββ         6.500e-06 seconds
+        αβ         9.000e-06 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 2 roots with 2S+1 = 1 *
   Found 2 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000152 s
+  Total time spent diagonalizing H:   0.000220 s
 
     PQ-space CI Energy Root   0        = -77.686293103453 Eh =   0.0000 eV, S^2 = 0.000000
     PQ-space CI Energy + EPT2 Root   0 = -77.686293103453 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.500000000  
-     1         2         1         0        0.500000000  
 
-           3                  1            1.000000000  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  50.00000000%
+         3     1    2    1    0  50.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  3         1   100.00000000%
+                  4         0     0.00000000%
+    -----------------------------------------
   ***** Calculation Converged *****
 
   ==> ACI Natural Orbitals <==
 
-
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000007 s
-        β          0.000007 s
         1Ag     1.998159      1B3u    1.001841      1B2g    0.998159  
         1B1u    0.001841      1B2u    0.000000      1B3g    0.000000  
 
@@ -1351,39 +1424,39 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> Energy Summary <==
 
-    Multi.(2ms)  Irrep.  No.               Energy
-    ---------------------------------------------
-       1  (  0)   B1u     0      -77.686293103453
-    ---------------------------------------------
+    Multi.(2ms)  Irrep.  No.               Energy      <S^2>
+    --------------------------------------------------------
+       1  (  0)   B1u     0      -77.686293103453   0.000000
+    --------------------------------------------------------
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000000 s
-        β          0.000000 s
-        αα         0.000000 s
-        ββ         0.000000 s
-        αβ         0.000000 s
-  --------------------------------
-  Computing 3-list...     done (0.00002 s)
+  ==> Computing 1 Coupling Lists <==
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000008 s
-        β          0.000007 s
-  1-RDM  took 0.000058 s (determinant)
-        αα         0.000005 s
-        ββ         0.000005 s
-        αβ         0.000014 s
-  --------------------------------
+        α          5.200e-06 seconds
+        β          5.300e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         5.300e-06 seconds
+        ββ         5.100e-06 seconds
+        αβ         5.200e-06 seconds
+  Computing 3-list...    
+
+  ==> Computing 3 Coupling Lists <==
+
+        ααα        5.400e-06 seconds
+        ααβ        1.060e-05 seconds
+        αββ        5.300e-06 seconds
+        βββ        5.300e-06 seconds done (0.00011 s)
+  1-RDM  took 0.000048 s (determinant)
   2-RDMS took 0.000066 s (determinant)
-  3-RDMs took 0.000225 s (determinant)
+  3-RDMs took 0.000233 s (determinant)
 
        -----------------------------------------------------------------
                             Semi-Canonical Orbitals
          Chenyang Li, Jeffrey B. Schriber and Francesco A. Evangelista
        -----------------------------------------------------------------
 
-  Took 0.012167 s to build Fock matrix
+  Took 0.010708 s to build Fock matrix
 
   ==> Checking Fock Matrix Diagonal Blocks <==
 
@@ -1409,7 +1482,7 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> Multireference Driven Similarity Renormalization Group <==
 
-    Computing Fock matrix and cleaning JK ....... Done. Timing      0.012 s
+    Computing Fock matrix and cleaning JK ....... Done. Timing      0.010 s
     Reading DSRG options ........................ Done. Timing      0.000 s
     Setting ambit MO space ...................... Done. Timing      0.000 s
     Initializing density cumulants .............. Done. Timing      0.000 s
@@ -1467,9 +1540,9 @@ Scratch directory: /Users/york/scratch/psi4/
     Max memory for local intermediates              10.66 KB
     Memory currently available                     389.96 MB
 
-    Initializing integrals ...................... Done. Timing      0.016 s
+    Initializing integrals ...................... Done. Timing      0.013 s
     Allocating amplitudes ....................... Done. Timing      0.000 s
-    Computing T2 amplitudes ..................... Done. Timing      0.017 s
+    Computing T2 amplitudes ..................... Done. Timing      0.016 s
     Computing T1 amplitudes ..................... Done. Timing      0.001 s
 
   ==> First-Order Excitation Amplitudes Summary <==
@@ -1496,7 +1569,7 @@ Scratch directory: /Users/york/scratch/psi4/
     [  42   42   43   43] 0.0289594 [  12   42   13   43] 0.0278940 [  42   16   42   18] 0.0271444
     [  42    1   42    3] 0.0265129 [  25   16    1   37] 0.0262807 [   1   35    1   38] 0.0262422
     -----------------------------------------------------------------------------------------------
-    2-Norm of T2 vector:                                                          0.474410188905716
+    2-Norm of T2 vector:                                                          0.474410188905715
     Number of nonzero elements:                                                               23428
     -----------------------------------------------------------------------------------------------
 
@@ -1504,47 +1577,48 @@ Scratch directory: /Users/york/scratch/psi4/
 
     T1 amplitudes larger than 0.1000: NULL
     T2 amplitudes larger than 0.1000: NULL
-    Renormalizing 2-body integrals .............. Done. Timing      0.013 s
+    Renormalizing 2-body integrals .............. Done. Timing      0.014 s
     Renormalizing 1-body integrals .............. Done. Timing      0.001 s
     Computing <0|[Fr, T1]|0> .................... Done. Timing      0.000 s
-    Computing <0|[Fr, T2]|0> .................... Done. Timing      0.001 s
-    Computing <0|[Vr, T1]|0> .................... Done. Timing      0.001 s
-    Computing <0|[Vr, T2]|0> .................... Done. Timing      0.013 s
+    Computing <0|[Fr, T2]|0> .................... Done. Timing      0.000 s
+    Computing <0|[Vr, T1]|0> .................... Done. Timing      0.000 s
+    Computing <0|[Vr, T2]|0> .................... Done. Timing      0.008 s
 
   ==> DSRG-MRPT2 Energy Summary <==
 
-    E0 (reference)                 =    -77.686293103453167
-    < Phi_0 | [Fr, T1] | Phi_0 >   =     -0.005201061369822
+    E0 (reference)                 =    -77.686293103453181
+    < Phi_0 | [Fr, T1] | Phi_0 >   =     -0.005201061369820
     < Phi_0 | [Fr, T2] | Phi_0 >   =      0.001772334249102
     < Phi_0 | [Vr, T1] | Phi_0 >   =      0.001762774386889
     < Phi_0 | [Vr, T2] | Phi_0 >   =     -0.306892121782492
-      - [Vr, T2] L1 contribution   =     -0.293747341760826
-      - [Vr, T2] L2 contribution   =     -0.013170216805278
+      - [Vr, T2] L1 contribution   =     -0.293747341760824
+      - [Vr, T2] L2 contribution   =     -0.013170216805279
       - [Vr, T2] L3 contribution   =      0.000025436783611
-    DSRG-MRPT2 correlation energy  =     -0.308558074516324
-    DSRG-MRPT2 total energy        =    -77.994851177969494
+    DSRG-MRPT2 correlation energy  =     -0.308558074516322
+    DSRG-MRPT2 total energy        =    -77.994851177969508
 
   ==> Total Timings (s) for Computing Commutators <==
 
              [H1, T1]    [H1, T2]    [H2, T1]    [H2, T2]
     -----------------------------------------------------
-    -> C0       0.000       0.001       0.001       0.013
+    -> C0       0.000       0.000       0.000       0.008
     -> C1       0.000       0.000       0.000       0.000
     -> C2                   0.000       0.000       0.000
     -----------------------------------------------------
 
 
-  Time to prepare integrals:        0.488 seconds
-  Time to run job          :        0.122 seconds
-  Total                    :        0.610 seconds    VCIS-DSRG-MRPT2 (spin-adapted) energy.................................................PASSED
+  Time to prepare integrals:        0.883 seconds
+  Time to run job          :        0.104 seconds
+  Total                    :        0.987 seconds
+    VCIS-DSRG-MRPT2 (spin-adapted) energy.................................................PASSED
 
-Scratch directory: /Users/york/scratch/psi4/
+Scratch directory: /tmp/
 
   Forte
   ----------------------------------------------------------------------------
   A suite of quantum chemistry methods for strongly correlated electrons
 
-    git branch: gasci-dsrg-semi - git commit: 6cd1a499
+    git branch: HEAD - git commit: 546ee104
 
   Developed by:
     Francesco A. Evangelista, Chenyang Li, Kevin P. Hannon,
@@ -1552,7 +1626,7 @@ Scratch directory: /Users/york/scratch/psi4/
     Nan He, Nicholas Stair, Shuhe Wang, Renke Huang
   ----------------------------------------------------------------------------
 
-  Size of Determinant class: 256 bits
+  Size of Determinant class: 128 bits
 
   Preparing forte objects from a Psi4 Wavefunction object
   Read options for space FROZEN_DOCC
@@ -1580,15 +1654,13 @@ Scratch directory: /Users/york/scratch/psi4/
     RESTRICTED_UOCC     8     2     3     5     2     8     5     3    36
     FROZEN_UOCC         0     0     0     0     0     0     0     0     0
     Total              11     2     4     7     2    11     7     4    48
-  -------------------------------------------------------------------------
-
-   => Loading Basis Set <=
+  -------------------------------------------------------------------------   => Loading Basis Set <=
 
     Name: CC-PVDZ
     Role: ORBITAL
     Keyword: BASIS
-    atoms 1-4 entry H          line    22 file /Users/york/src/psi4new/psi4/share/psi4/basis/cc-pvdz.gbs 
-    atoms 5-6 entry C          line   138 file /Users/york/src/psi4new/psi4/share/psi4/basis/cc-pvdz.gbs 
+    atoms 1-4 entry H          line    22 file /home/mhuang/psi4_install/share/psi4/basis/cc-pvdz.gbs 
+    atoms 5-6 entry C          line   138 file /home/mhuang/psi4_install/share/psi4/basis/cc-pvdz.gbs 
 
 
   Checking orbital orthonormality against current geometry ... Done (OK)
@@ -1598,9 +1670,11 @@ Scratch directory: /Users/york/scratch/psi4/
     Name: STO-3G
     Role: ORBITAL
     Keyword: MINAO_BASIS
-    atoms 1-4 entry H          line    19 file /Users/york/src/psi4new/psi4/share/psi4/basis/sto-3g.gbs 
-    atoms 5-6 entry C          line    61 file /Users/york/src/psi4new/psi4/share/psi4/basis/sto-3g.gbs 
+    atoms 1-4 entry H          line    19 file /home/mhuang/psi4_install/share/psi4/basis/sto-3g.gbs 
+    atoms 5-6 entry C          line    61 file /home/mhuang/psi4_install/share/psi4/basis/sto-3g.gbs 
 
+
+  ==> List of Planes Requested <==
 
   Forte will use psi4 integrals
 
@@ -1609,7 +1683,7 @@ Scratch directory: /Users/york/scratch/psi4/
   Basis Set: CC-PVDZ
     Blend: CC-PVDZ
     Number of shells: 24
-    Number of basis function: 48
+    Number of basis functions: 48
     Number of Cartesian functions: 50
     Spherical Harmonics?: true
     Max angular momentum: 2
@@ -1644,16 +1718,16 @@ Scratch directory: /Users/york/scratch/psi4/
   Computing the Cholesky Vectors 
 
   Computing CD Integrals
-  Timing for cholesky transformation:                         1.420 s.
+  Timing for cholesky transformation:                         1.350 s.
   Need 17.40 MB to store CD integrals in core
 
   Number of Cholesky vectors required for 1.000e-12 tolerance: 944
 
-  Frozen-core energy         -78.536477455854225 a.u.
-  Timing for frozen one-body operator:                        0.007 s.
+  Frozen-core energy         -78.536477455854310 a.u.
+  Timing for frozen one-body operator:                        0.008 s.
   Resorting integrals after freezing core.
-  Timing for freezing core and virtual orbitals:              0.038 s.
-  Timing for computing Cholesky integrals:                    1.724 s.
+  Timing for freezing core and virtual orbitals:              0.054 s.
+  Timing for computing Cholesky integrals:                    1.731 s.
 
   ==> Summary of Active Space Solver Input <==
 
@@ -1667,12 +1741,10 @@ Scratch directory: /Users/york/scratch/psi4/
     --------------------------
 
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
                Selected Configuration Interaction Excited States
-  written by Jeffrey B. Schriber, Tianyuan Zhang and Francesco A. Evangelista
--------------------------------------------------------------------------------
-
-  ==> Reference Information <==
+  written by Jeffrey B. Schriber, Tianyuan Zhang, and Francesco A. Evangelista
+--------------------------------------------------------------------------------
 
   ==> Calculation Information <==
 
@@ -1683,7 +1755,7 @@ Scratch directory: /Users/york/scratch/psi4/
     Ms                                       0
     Excited Algorithm                        NONE
   -----------------------------------------------------------------
-  Using 1 threads
+  Using 1 thread(s)
   Computing wavefunction for root 0
 
         ---------------------------------------------------------------
@@ -1703,6 +1775,8 @@ Scratch directory: /Users/york/scratch/psi4/
     Symmetry                                 5    
     Number of roots                          1    
     Root used for properties                 0    
+    Roots used for averaging                 1    
+    Root averaging offset                    0    
     Sigma (Eh)                               0.00e+00
     Gamma (Eh^(-1))                          1.00e+00
     Convergence threshold                    1.00e-09
@@ -1712,56 +1786,84 @@ Scratch directory: /Users/york/scratch/psi4/
     Project out spin contaminants            True
     Enforce spin completeness of basis       True
     Enforce complete aimed selection         True
+    Multiroot averaging                      Average
   -----------------------------------------------------------------
+  Number of active orbitals: 6
   Number of active alpha electrons: 2
   Number of active beta electrons: 2
-  Maximum reference space size: 1000
-  The maximum number of electrons in GAS1 is 4 
-  The minimum number of electrons in GAS1 is 0
-  The maximum number of electrons in GAS2 is 2
-  The minimum number of electrons in GAS2 is 0
-  
-  Possible electron occupations in the GAS 
-  GAS1_A  GAS1_B  GAS2_A  GAS2_B  
-     2       2       0       0    
-     2       1       0       1    
-     2       0       0       2    
-     1       2       1       0    
-     1       1       1       1    
-     0       2       2       0    
 
-  GAS Orbital Energies
-  GAS   Energies    Orb 
-  1  -0.583296811  0 
-  1  -0.373390172  5 
-  2   0.167256582  1 
-  2   0.303090334  2 
-  2   0.237643556  3 
-  2   0.232823472  4 
+  ==> GAS Orbital Energies from SCF <==
+
+    GAS        Energy  Index
+    ------------------------
+     1    -0.58329681      0
+     1    -0.37339017      5
+     2     0.16725658      1
+     2     0.30309033      2
+     2     0.23764356      3
+     2     0.23282347      4
+    ------------------------
+
+  ==> Number of Electrons in GAS <==
+
+    GAS  MAX  MIN
+    -------------
+      1    4    0
+      2    2    0
+    -------------
+
+  ==> Possible Electron Occupations in GAS <==
+
+    Config.  1_A  1_B  2_A  2_B
+    ---------------------------
+         1     2    2    0    0
+         2     2    1    0    1
+         3     2    0    0    2
+         4     1    2    1    0
+         5     1    1    1    1
+         6     0    2    2    0
+    ---------------------------
+    n_A/B: # of alpha/beta electrons in GASn
+
+  ==> Building GAS Determinants <==
+
+    Config.  #Determinants     Time/s
+    ---------------------------------
+         1               0  3.490e-05
+         2               2  3.680e-05
+         3               0  3.350e-05
+         4               2  3.350e-05
+         5               4  3.810e-05
+         6               0  3.140e-05
+    ---------------------------------
+    Total:               8  2.855e-04
+    ---------------------------------
+
 
   ---------------------------------- Cycle 0 -----------------------------------
-
 
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 8
   Spin-complete dimension of the P space: 8 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000012 s
-        β          0.000012 s
-        αα         0.000009 s
-        ββ         0.000008 s
-        αβ         0.000022 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          9.700e-06 seconds
+        β          8.500e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         8.500e-06 seconds
+        ββ         7.800e-06 seconds
+        αβ         1.300e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000253 s
+  Time spent diagonalizing H:   0.000288 s
 
     P-space  CI Energy Root   0        = -77.686323935354 Eh =   0.0000 eV, S^2 = 0.000000
 
@@ -1769,140 +1871,151 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000052
-  Time spent merging thread F spaces:             0.000002
+  Time spent forming F space:             0.000025
+  Time spent merging thread F spaces:             0.000003
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000083
-  Spin-complete dimension of the PQ space: 8
+  Time spent building sorting list: 0.000003
+  Dimension of the PQ space:                  8
+  Dimension of the PQ space (spin-complete) : 8
+  Time spent building the model space: 0.000096
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000011 s
-        β          0.000011 s
-        αα         0.000008 s
-        ββ         0.000007 s
-        αβ         0.000022 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          8.800e-06 seconds
+        β          8.700e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         9.000e-06 seconds
+        ββ         2.670e-05 seconds
+        αβ         2.700e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000230 s
+  Total time spent diagonalizing H:   0.000387 s
 
     PQ-space CI Energy Root   0        = -77.686323935354 Eh =   0.0000 eV, S^2 = 0.000000
     PQ-space CI Energy + EPT2 Root   0 = -77.686323935354 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.499978539  
-     2         0         0         2        0.000000000  
-     1         2         1         0        0.499978539  
-     1         1         1         1        0.000042922  
-     0         2         2         0        0.000000000  
 
-           2                  2            0.000042922  
-           3                  1            0.999957078  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  49.99785391%
+         3     2    0    0    2   0.00000000%
+         4     1    2    1    0  49.99785391%
+         5     1    1    1    1   0.00429218%
+         6     0    2    2    0   0.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  2         2     0.00429218%
+                  3         1    99.99570782%
+                  4         0     0.00000000%
+    -----------------------------------------
 
   ==> Pruning the Q space <==
 
-  Cycle 0 took: 0.000909 s
+  Cycle 0 took: 0.001405 s
+
 
   ---------------------------------- Cycle 1 -----------------------------------
-
 
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 8
   Spin-complete dimension of the P space: 8 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000011 s
-        β          0.000011 s
-        αα         0.000008 s
-        ββ         0.000007 s
-        αβ         0.000021 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          8.900e-06 seconds
+        β          8.200e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         8.300e-06 seconds
+        ββ         7.400e-06 seconds
+        αβ         1.260e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000207 s
+  Time spent diagonalizing H:   0.000287 s
 
-    P-space  CI Energy Root   0        = -77.686323935353 Eh =   0.0000 eV, S^2 = 0.000000
+    P-space  CI Energy Root   0        = -77.686323935354 Eh =   0.0000 eV, S^2 = 0.000000
 
 
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000050
-  Time spent merging thread F spaces:             0.000002
+  Time spent forming F space:             0.000023
+  Time spent merging thread F spaces:             0.000003
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000080
-  Spin-complete dimension of the PQ space: 8
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  8
+  Dimension of the PQ space (spin-complete) : 8
+  Time spent building the model space: 0.000092
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000011 s
-        β          0.000011 s
-        αα         0.000008 s
-        ββ         0.000007 s
-        αβ         0.000021 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          8.700e-06 seconds
+        β          8.300e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         7.800e-06 seconds
+        ββ         7.300e-06 seconds
+        αβ         1.210e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000208 s
+  Total time spent diagonalizing H:   0.000243 s
 
-    PQ-space CI Energy Root   0        = -77.686323935353 Eh =   0.0000 eV, S^2 = 0.000000
-    PQ-space CI Energy + EPT2 Root   0 = -77.686323935353 Eh =   0.0000 eV
+    PQ-space CI Energy Root   0        = -77.686323935354 Eh =   0.0000 eV, S^2 = 0.000000
+    PQ-space CI Energy + EPT2 Root   0 = -77.686323935354 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.499978539  
-     2         0         0         2        0.000000000  
-     1         2         1         0        0.499978539  
-     1         1         1         1        0.000042922  
-     0         2         2         0        0.000000000  
 
-           2                  2            0.000042922  
-           3                  1            0.999957078  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  49.99785391%
+         3     2    0    0    2   0.00000000%
+         4     1    2    1    0  49.99785391%
+         5     1    1    1    1   0.00429218%
+         6     0    2    2    0   0.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  2         2     0.00429218%
+                  3         1    99.99570782%
+                  4         0     0.00000000%
+    -----------------------------------------
   ***** Calculation Converged *****
 
   ==> ACI Natural Orbitals <==
 
-
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000011 s
-        β          0.000011 s
         1Ag     1.998150      1B3u    1.001807      1B2g    0.998109  
         1B1u    0.001848      1B2u    0.000043      1B3g    0.000043  
 
@@ -1911,8 +2024,8 @@ Scratch directory: /Users/york/scratch/psi4/
   Iterations required:                         1
   Dimension of optimized determinant space:    8
 
-  * Selected-CI Energy Root   0        = -77.686323935353 Eh =   0.0000 eV
-  * Selected-CI Energy Root   0 + EPT2 = -77.686323935353 Eh =   0.0000 eV
+  * Selected-CI Energy Root   0        = -77.686323935354 Eh =   0.0000 eV
+  * Selected-CI Energy Root   0 + EPT2 = -77.686323935354 Eh =   0.0000 eV
 
   ==> Wavefunction Information <==
 
@@ -1930,39 +2043,39 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> Energy Summary <==
 
-    Multi.(2ms)  Irrep.  No.               Energy
-    ---------------------------------------------
-       1  (  0)   B1u     0      -77.686323935353
-    ---------------------------------------------
+    Multi.(2ms)  Irrep.  No.               Energy      <S^2>
+    --------------------------------------------------------
+       1  (  0)   B1u     0      -77.686323935354   0.000000
+    --------------------------------------------------------
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000000 s
-        β          0.000000 s
-        αα         0.000000 s
-        ββ         0.000000 s
-        αβ         0.000000 s
-  --------------------------------
-  Computing 3-list...     done (0.00003 s)
+  ==> Computing 1 Coupling Lists <==
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000011 s
-        β          0.000011 s
-  1-RDM  took 0.000076 s (determinant)
-        αα         0.000008 s
-        ββ         0.000007 s
-        αβ         0.000022 s
-  --------------------------------
-  2-RDMS took 0.000090 s (determinant)
-  3-RDMs took 0.000466 s (determinant)
+        α          5.300e-06 seconds
+        β          5.300e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         5.200e-06 seconds
+        ββ         5.200e-06 seconds
+        αβ         5.200e-06 seconds
+  Computing 3-list...    
+
+  ==> Computing 3 Coupling Lists <==
+
+        ααα        5.400e-06 seconds
+        ααβ        1.430e-05 seconds
+        αββ        5.200e-06 seconds
+        βββ        5.300e-06 seconds done (0.00011 s)
+  1-RDM  took 0.000056 s (determinant)
+  2-RDMS took 0.000075 s (determinant)
+  3-RDMs took 0.000380 s (determinant)
 
        -----------------------------------------------------------------
                             Semi-Canonical Orbitals
          Chenyang Li, Jeffrey B. Schriber and Francesco A. Evangelista
        -----------------------------------------------------------------
 
-  Took 0.024050 s to build Fock matrix
+  Took 0.021080 s to build Fock matrix
 
   ==> Checking Fock Matrix Diagonal Blocks <==
 
@@ -1978,21 +2091,21 @@ Scratch directory: /Users/york/scratch/psi4/
   Computing the Cholesky Vectors 
 
   Computing CD Integrals
-  Timing for cholesky transformation:                         1.422 s.
+  Timing for cholesky transformation:                         1.296 s.
   Need 17.40 MB to store CD integrals in core
 
   Number of Cholesky vectors required for 1.000e-12 tolerance: 944
 
-  Frozen-core energy         -78.536477455854225 a.u.
-  Timing for frozen one-body operator:                        0.007 s.
+  Frozen-core energy         -78.536477455854310 a.u.
+  Timing for frozen one-body operator:                        0.008 s.
   Resorting integrals after freezing core.
-  Timing for freezing core and virtual orbitals:              0.038 s.
-  Integrals update took     1.700 s.
+  Timing for freezing core and virtual orbitals:              0.035 s.
+  Integrals update took     1.554 s.
   Rotating RDMs assuming average over spin multiplets ...
     Transformed 1 RDM.
     Transformed 2 RDM.
     Transformed 3 RDM.
-  Timing for semi-canonicalizing orbitals:                    1.801 s.
+  Timing for semi-canonicalizing orbitals:                    1.612 s.
 
   ==> Multireference Driven Similarity Renormalization Group <==
 
@@ -2039,18 +2152,18 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> Computing DSRG-MRPT2 ... <==
 
-    Computing T2 amplitudes                  ...  Done. Timing        0.036116 s
-    Computing T1 amplitudes                  ...  Done. Timing        0.001150 s
-    Renormalizing two-electron integrals     ...  Done. Timing        0.032302 s
-    Renormalizing Fock matrix elements       ...  Done. Timing        0.001229 s
-    Computing <[F, T1]>                      ...  Done. Timing        0.000712 s
-    Computing <[F, T2]>                      ...  Done. Timing        0.003181 s
-    Computing <[V, T1]>                      ...  Done. Timing        0.003741 s
-    Computing <[V, T2]> (C_2)^4              ...  Done. Timing        0.012204 s
-    Computing <[V, T2]> C_4 (C_2)^2 HH       ...  Done. Timing        0.005751 s
-    Computing <[V, T2]> C_4 (C_2)^2 PP       ...  Done. Timing        0.005695 s
-    Computing <[V, T2]> C_4 (C_2)^2 PH       ...  Done. Timing        0.022046 s
-    Computing <[V, T2]> C_6 C_2              ...  Done. Timing        0.029239 s
+    Computing T2 amplitudes                  ...  Done. Timing        0.038286 s
+    Computing T1 amplitudes                  ...  Done. Timing        0.000772 s
+    Renormalizing two-electron integrals     ...  Done. Timing        0.038087 s
+    Renormalizing Fock matrix elements       ...  Done. Timing        0.000806 s
+    Computing <[F, T1]>                      ...  Done. Timing        0.000474 s
+    Computing <[F, T2]>                      ...  Done. Timing        0.001511 s
+    Computing <[V, T1]>                      ...  Done. Timing        0.001617 s
+    Computing <[V, T2]> (C_2)^4              ...  Done. Timing        0.007490 s
+    Computing <[V, T2]> C_4 (C_2)^2 HH       ...  Done. Timing        0.002825 s
+    Computing <[V, T2]> C_4 (C_2)^2 PP       ...  Done. Timing        0.003262 s
+    Computing <[V, T2]> C_4 (C_2)^2 PH       ...  Done. Timing        0.012521 s
+    Computing <[V, T2]> C_6 C_2              ...  Done. Timing        0.025847 s
 
   ==> Excitation Amplitudes Summary <==
 
@@ -2064,7 +2177,7 @@ Scratch directory: /Users/york/scratch/psi4/
     [ 12      14    ]-0.006115 [  0       4    ] 0.006017 [ 12      15    ] 0.005988 
     [ 25      27    ] 0.005778 [  1       4    ]-0.005491 [ 36      40    ]-0.004973 
     --------------------------------------------------------------------------------
-    Norm of T1A vector: (nonzero elements: 62)                    0.032171876808277.
+    Norm of T1A vector: (nonzero elements: 62)                    0.032171876808278.
     --------------------------------------------------------------------------------
     Largest T1 amplitudes for spin case B:
        _       _                  _       _                  _       _               
@@ -2076,7 +2189,7 @@ Scratch directory: /Users/york/scratch/psi4/
     [ 12      14    ]-0.006115 [  0       4    ] 0.006017 [ 12      15    ] 0.005988 
     [ 25      27    ] 0.005778 [  1       4    ]-0.005491 [ 36      40    ]-0.004973 
     --------------------------------------------------------------------------------
-    Norm of T1B vector: (nonzero elements: 62)                    0.032171876808277.
+    Norm of T1B vector: (nonzero elements: 62)                    0.032171876808278.
     --------------------------------------------------------------------------------
     Largest T2 amplitudes for spin case AA:
        i   j   a   b              i   j   a   b              i   j   a   b           
@@ -2087,7 +2200,7 @@ Scratch directory: /Users/york/scratch/psi4/
     [ 35  42  36  42] 0.022414 [ 12  25   1  44] 0.021762 [  1  42  12  29]-0.020350 
     [  1  25   1  28] 0.020245 [  1  25   1  27]-0.020166 [  1  16   1  17]-0.020089 
     --------------------------------------------------------------------------------
-    Norm of T2AA vector: (nonzero elements: 34512)                0.470641285735805.
+    Norm of T2AA vector: (nonzero elements: 34484)                0.470641285735805.
     --------------------------------------------------------------------------------
     Largest T2 amplitudes for spin case AB:
            _       _                  _       _                  _       _           
@@ -2099,7 +2212,7 @@ Scratch directory: /Users/york/scratch/psi4/
     [ 12  42  13  43]-0.027894 [ 16  42  18  42] 0.027144 [  1  42   3  42]-0.026513 
     [  1  35   1  38] 0.026242 [ 42  42  12  12]-0.025411 [ 42  42  13  13]-0.024738 
     --------------------------------------------------------------------------------
-    Norm of T2AB vector: (nonzero elements: 36838)                0.474410208700192.
+    Norm of T2AB vector: (nonzero elements: 36902)                0.474410208700191.
     --------------------------------------------------------------------------------
     Largest T2 amplitudes for spin case BB:
        _   _   _   _              _   _   _   _              _   _   _   _           
@@ -2111,7 +2224,7 @@ Scratch directory: /Users/york/scratch/psi4/
     [ 35  42  36  42] 0.022414 [ 12  25   1  44] 0.021762 [  1  42  12  29]-0.020350 
     [  1  25   1  28] 0.020245 [  1  25   1  27]-0.020166 [  1  16   1  17]-0.020089 
     --------------------------------------------------------------------------------
-    Norm of T2BB vector: (nonzero elements: 34512)                0.470641285735805.
+    Norm of T2BB vector: (nonzero elements: 34484)                0.470641285735805.
     --------------------------------------------------------------------------------
 
   ==> Possible Intruders <==
@@ -2124,24 +2237,24 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> DSRG-MRPT2 Energy Summary <==
 
-    E0 (reference)                 =    -77.686323935353528
-    <[F, T1]>                      =     -0.005202272507648
+    E0 (reference)                 =    -77.686323935353585
+    <[F, T1]>                      =     -0.005202272507647
     <[F, T2]>                      =      0.001787228754057
     <[V, T1]>                      =      0.001762570152992
-    <[V, T2]> (C_2)^4              =     -0.293746531705518
-    <[V, T2]> C_4 (C_2)^2 HH       =     -0.000331011123815
+    <[V, T2]> (C_2)^4              =     -0.293746531705517
+    <[V, T2]> C_4 (C_2)^2 HH       =     -0.000331011123816
     <[V, T2]> C_4 (C_2)^2 PP       =     -0.008560075766059
-    <[V, T2]> C_4 (C_2)^2 PH       =     -0.004280792940484
+    <[V, T2]> C_4 (C_2)^2 PH       =     -0.004280792940485
     <[V, T2]> C_6 C_2              =      0.000029745947546
-    <[V, T2]>                      =     -0.306888665588330
-    DSRG-MRPT2 correlation energy  =     -0.308541139188930
-    DSRG-MRPT2 total energy        =    -77.994865074542460
-    max(T1)                        =      0.011325070399467
+    <[V, T2]>                      =     -0.306888665588331
+    DSRG-MRPT2 correlation energy  =     -0.308541139188929
+    DSRG-MRPT2 total energy        =    -77.994865074542517
+    max(T1)                        =      0.011325070399468
     max(T2)                        =      0.035705147691957
-    ||T1||                         =      0.045497904509262
+    ||T1||                         =      0.045497904509263
     ||T2||                         =      1.158993798151629
 
-  Energy took      0.194 s
+  Energy took      0.174 s
 
 
   ==> De-Normal-Order DSRG Transformed Hamiltonian <==
@@ -2152,14 +2265,12 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Rotate DSRG Transformed Hamiltonian back to Original Basis <==
 
     Rotating 1-body term to original basis   ... Done. Timing    0.000 s
-    Rotating 2-body term to original basis   ... Done. Timing    0.004 s
+    Rotating 2-body term to original basis   ... Done. Timing    0.002 s
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
                Selected Configuration Interaction Excited States
-  written by Jeffrey B. Schriber, Tianyuan Zhang and Francesco A. Evangelista
--------------------------------------------------------------------------------
-
-  ==> Reference Information <==
+  written by Jeffrey B. Schriber, Tianyuan Zhang, and Francesco A. Evangelista
+--------------------------------------------------------------------------------
 
   ==> Calculation Information <==
 
@@ -2170,7 +2281,7 @@ Scratch directory: /Users/york/scratch/psi4/
     Ms                                       0
     Excited Algorithm                        NONE
   -----------------------------------------------------------------
-  Using 1 threads
+  Using 1 thread(s)
   Computing wavefunction for root 0
 
         ---------------------------------------------------------------
@@ -2190,6 +2301,8 @@ Scratch directory: /Users/york/scratch/psi4/
     Symmetry                                 5    
     Number of roots                          1    
     Root used for properties                 0    
+    Roots used for averaging                 1    
+    Root averaging offset                    0    
     Sigma (Eh)                               0.00e+00
     Gamma (Eh^(-1))                          1.00e+00
     Convergence threshold                    1.00e-09
@@ -2199,56 +2312,84 @@ Scratch directory: /Users/york/scratch/psi4/
     Project out spin contaminants            True
     Enforce spin completeness of basis       True
     Enforce complete aimed selection         True
+    Multiroot averaging                      Average
   -----------------------------------------------------------------
+  Number of active orbitals: 6
   Number of active alpha electrons: 2
   Number of active beta electrons: 2
-  Maximum reference space size: 1000
-  The maximum number of electrons in GAS1 is 4 
-  The minimum number of electrons in GAS1 is 0
-  The maximum number of electrons in GAS2 is 2
-  The minimum number of electrons in GAS2 is 0
-  
-  Possible electron occupations in the GAS 
-  GAS1_A  GAS1_B  GAS2_A  GAS2_B  
-     2       2       0       0    
-     2       1       0       1    
-     2       0       0       2    
-     1       2       1       0    
-     1       1       1       1    
-     0       2       2       0    
 
-  GAS Orbital Energies
-  GAS   Energies    Orb 
-  1  -0.583296811  0 
-  1  -0.373390172  5 
-  2   0.167256582  1 
-  2   0.303090334  2 
-  2   0.237643556  3 
-  2   0.232823472  4 
+  ==> GAS Orbital Energies from SCF <==
+
+    GAS        Energy  Index
+    ------------------------
+     1    -0.58329681      0
+     1    -0.37339017      5
+     2     0.16725658      1
+     2     0.30309033      2
+     2     0.23764356      3
+     2     0.23282347      4
+    ------------------------
+
+  ==> Number of Electrons in GAS <==
+
+    GAS  MAX  MIN
+    -------------
+      1    4    0
+      2    2    0
+    -------------
+
+  ==> Possible Electron Occupations in GAS <==
+
+    Config.  1_A  1_B  2_A  2_B
+    ---------------------------
+         1     2    2    0    0
+         2     2    1    0    1
+         3     2    0    0    2
+         4     1    2    1    0
+         5     1    1    1    1
+         6     0    2    2    0
+    ---------------------------
+    n_A/B: # of alpha/beta electrons in GASn
+
+  ==> Building GAS Determinants <==
+
+    Config.  #Determinants     Time/s
+    ---------------------------------
+         1               0  3.450e-05
+         2               2  3.690e-05
+         3               0  3.370e-05
+         4               2  5.500e-05
+         5               4  4.010e-05
+         6               0  3.260e-05
+    ---------------------------------
+    Total:               8  3.418e-04
+    ---------------------------------
+
 
   ---------------------------------- Cycle 0 -----------------------------------
 
-
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 8
   Spin-complete dimension of the P space: 8 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000009 s
-        β          0.000009 s
-        αα         0.000007 s
-        ββ         0.000006 s
-        αβ         0.000018 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          9.900e-06 seconds
+        β          8.800e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         8.700e-06 seconds
+        ββ         7.900e-06 seconds
+        αβ         1.310e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000194 s
+  Time spent diagonalizing H:   0.000283 s
 
     P-space  CI Energy Root   0        = -77.995041230894 Eh =   0.0000 eV, S^2 = 0.000000
 
@@ -2256,79 +2397,88 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000040
-  Time spent merging thread F spaces:             0.000002
+  Time spent forming F space:             0.000025
+  Time spent merging thread F spaces:             0.000003
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000063
-  Spin-complete dimension of the PQ space: 8
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  8
+  Dimension of the PQ space (spin-complete) : 8
+  Time spent building the model space: 0.000095
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000008 s
-        β          0.000008 s
-        αα         0.000006 s
-        ββ         0.000005 s
-        αβ         0.000016 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          9.000e-06 seconds
+        β          8.600e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         8.300e-06 seconds
+        ββ         7.500e-06 seconds
+        αβ         1.220e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000158 s
+  Total time spent diagonalizing H:   0.000257 s
 
     PQ-space CI Energy Root   0        = -77.995041230894 Eh =   0.0000 eV, S^2 = 0.000000
     PQ-space CI Energy + EPT2 Root   0 = -77.995041230894 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.499984350  
-     2         0         0         2        0.000000000  
-     1         2         1         0        0.499984350  
-     1         1         1         1        0.000031300  
-     0         2         2         0        0.000000000  
 
-           2                  2            0.000031300  
-           3                  1            0.999968700  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  49.99843499%
+         3     2    0    0    2   0.00000000%
+         4     1    2    1    0  49.99843499%
+         5     1    1    1    1   0.00313002%
+         6     0    2    2    0   0.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  2         2     0.00313002%
+                  3         1    99.99686998%
+                  4         0     0.00000000%
+    -----------------------------------------
 
   ==> Pruning the Q space <==
 
-  Cycle 0 took: 0.000671 s
+  Cycle 0 took: 0.001301 s
+
 
   ---------------------------------- Cycle 1 -----------------------------------
-
 
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 8
   Spin-complete dimension of the P space: 8 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000008 s
-        β          0.000008 s
-        αα         0.000006 s
-        ββ         0.000005 s
-        αβ         0.000016 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          9.000e-06 seconds
+        β          8.400e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         7.900e-06 seconds
+        ββ         7.400e-06 seconds
+        αβ         1.260e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000153 s
+  Time spent diagonalizing H:   0.000245 s
 
     P-space  CI Energy Root   0        = -77.995041230894 Eh =   0.0000 eV, S^2 = 0.000000
 
@@ -2336,60 +2486,62 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000038
-  Time spent merging thread F spaces:             0.000002
+  Time spent forming F space:             0.000023
+  Time spent merging thread F spaces:             0.000003
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000060
-  Spin-complete dimension of the PQ space: 8
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  8
+  Dimension of the PQ space (spin-complete) : 8
+  Time spent building the model space: 0.000092
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000008 s
-        β          0.000008 s
-        αα         0.000006 s
-        ββ         0.000005 s
-        αβ         0.000016 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          9.400e-06 seconds
+        β          8.700e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         7.900e-06 seconds
+        ββ         7.500e-06 seconds
+        αβ         1.230e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000155 s
+  Total time spent diagonalizing H:   0.000350 s
 
     PQ-space CI Energy Root   0        = -77.995041230894 Eh =   0.0000 eV, S^2 = 0.000000
     PQ-space CI Energy + EPT2 Root   0 = -77.995041230894 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.499984350  
-     2         0         0         2        0.000000000  
-     1         2         1         0        0.499984350  
-     1         1         1         1        0.000031300  
-     0         2         2         0        0.000000000  
 
-           2                  2            0.000031300  
-           3                  1            0.999968700  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  49.99843499%
+         3     2    0    0    2   0.00000000%
+         4     1    2    1    0  49.99843499%
+         5     1    1    1    1   0.00313002%
+         6     0    2    2    0   0.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  2         2     0.00313002%
+                  3         1    99.99686998%
+                  4         0     0.00000000%
+    -----------------------------------------
   ***** Calculation Converged *****
 
   ==> ACI Natural Orbitals <==
 
-
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000008 s
-        β          0.000008 s
         1Ag     1.999746      1B3u    1.000222      1B2g    0.999715  
         1B1u    0.000254      1B2u    0.000031      1B3g    0.000031  
 
@@ -2417,10 +2569,10 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> Energy Summary <==
 
-    Multi.(2ms)  Irrep.  No.               Energy
-    ---------------------------------------------
-       1  (  0)   B1u     0      -77.995041230894
-    ---------------------------------------------
+    Multi.(2ms)  Irrep.  No.               Energy      <S^2>
+    --------------------------------------------------------
+       1  (  0)   B1u     0      -77.995041230894   0.000000
+    --------------------------------------------------------
 
   => DSRG-MRPT2 Reference Relaxation Energy Summary <=
 
@@ -2428,30 +2580,31 @@ Scratch directory: /Users/york/scratch/psi4/
            -------------------------------  -------------------------------
     Iter.          Total Energy      Delta          Total Energy      Delta
     -----------------------------------------------------------------------
-        1      -77.994865074542 -7.799e+01      -77.995041230894 -7.800e+01
+        1      -77.994865074543 -7.799e+01      -77.995041230894 -7.800e+01
     -----------------------------------------------------------------------
 
   ==> Total Timings (s) for Computing Commutators <==
 
              [H1, T1]    [H1, T2]    [H2, T1]    [H2, T2]
     -----------------------------------------------------
-    -> C0       0.001       0.003       0.004       0.075
-    -> C1       0.001       0.004       0.003       0.062
-    -> C2                   0.004       0.003       0.021
+    -> C0       0.001       0.002       0.002       0.052
+    -> C1       0.000       0.002       0.002       0.036
+    -> C2                   0.001       0.002       0.013
     -----------------------------------------------------
 
 
-  Time to prepare integrals:        3.160 seconds
-  Time to run job          :        2.221 seconds
-  Total                    :        5.381 seconds    CD-VCISD-DSRG-MRPT2 (spin-integrated) energy..........................................PASSED
+  Time to prepare integrals:        3.119 seconds
+  Time to run job          :        1.976 seconds
+  Total                    :        5.095 seconds
+    CD-VCISD-DSRG-MRPT2 (spin-integrated) energy..........................................PASSED
 
-Scratch directory: /Users/york/scratch/psi4/
+Scratch directory: /tmp/
 
   Forte
   ----------------------------------------------------------------------------
   A suite of quantum chemistry methods for strongly correlated electrons
 
-    git branch: gasci-dsrg-semi - git commit: 6cd1a499
+    git branch: HEAD - git commit: 546ee104
 
   Developed by:
     Francesco A. Evangelista, Chenyang Li, Kevin P. Hannon,
@@ -2459,7 +2612,7 @@ Scratch directory: /Users/york/scratch/psi4/
     Nan He, Nicholas Stair, Shuhe Wang, Renke Huang
   ----------------------------------------------------------------------------
 
-  Size of Determinant class: 256 bits
+  Size of Determinant class: 128 bits
 
   Preparing forte objects from a Psi4 Wavefunction object
   Read options for space FROZEN_DOCC
@@ -2487,15 +2640,13 @@ Scratch directory: /Users/york/scratch/psi4/
     RESTRICTED_UOCC     8     2     3     5     2     8     5     3    36
     FROZEN_UOCC         0     0     0     0     0     0     0     0     0
     Total              11     2     4     7     2    11     7     4    48
-  -------------------------------------------------------------------------
-
-   => Loading Basis Set <=
+  -------------------------------------------------------------------------   => Loading Basis Set <=
 
     Name: CC-PVDZ
     Role: ORBITAL
     Keyword: BASIS
-    atoms 1-4 entry H          line    22 file /Users/york/src/psi4new/psi4/share/psi4/basis/cc-pvdz.gbs 
-    atoms 5-6 entry C          line   138 file /Users/york/src/psi4new/psi4/share/psi4/basis/cc-pvdz.gbs 
+    atoms 1-4 entry H          line    22 file /home/mhuang/psi4_install/share/psi4/basis/cc-pvdz.gbs 
+    atoms 5-6 entry C          line   138 file /home/mhuang/psi4_install/share/psi4/basis/cc-pvdz.gbs 
 
 
   Checking orbital orthonormality against current geometry ... Done (OK)
@@ -2505,9 +2656,11 @@ Scratch directory: /Users/york/scratch/psi4/
     Name: STO-3G
     Role: ORBITAL
     Keyword: MINAO_BASIS
-    atoms 1-4 entry H          line    19 file /Users/york/src/psi4new/psi4/share/psi4/basis/sto-3g.gbs 
-    atoms 5-6 entry C          line    61 file /Users/york/src/psi4new/psi4/share/psi4/basis/sto-3g.gbs 
+    atoms 1-4 entry H          line    19 file /home/mhuang/psi4_install/share/psi4/basis/sto-3g.gbs 
+    atoms 5-6 entry C          line    61 file /home/mhuang/psi4_install/share/psi4/basis/sto-3g.gbs 
 
+
+  ==> List of Planes Requested <==
 
   Forte will use psi4 integrals
 
@@ -2516,7 +2669,7 @@ Scratch directory: /Users/york/scratch/psi4/
   Basis Set: CC-PVDZ
     Blend: CC-PVDZ
     Number of shells: 24
-    Number of basis function: 48
+    Number of basis functions: 48
     Number of Cartesian functions: 50
     Spherical Harmonics?: true
     Max angular momentum: 2
@@ -2551,16 +2704,16 @@ Scratch directory: /Users/york/scratch/psi4/
   Computing the Cholesky Vectors 
 
   Computing CD Integrals
-  Timing for cholesky transformation:                         1.404 s.
+  Timing for cholesky transformation:                         1.284 s.
   Need 17.40 MB to store CD integrals in core
 
   Number of Cholesky vectors required for 1.000e-12 tolerance: 944
 
-  Frozen-core energy         -78.536477455854225 a.u.
-  Timing for frozen one-body operator:                        0.006 s.
+  Frozen-core energy         -78.536477455854310 a.u.
+  Timing for frozen one-body operator:                        0.007 s.
   Resorting integrals after freezing core.
-  Timing for freezing core and virtual orbitals:              0.037 s.
-  Timing for computing Cholesky integrals:                    1.674 s.
+  Timing for freezing core and virtual orbitals:              0.034 s.
+  Timing for computing Cholesky integrals:                    1.559 s.
 
   ==> Summary of Active Space Solver Input <==
 
@@ -2574,12 +2727,10 @@ Scratch directory: /Users/york/scratch/psi4/
     --------------------------
 
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
                Selected Configuration Interaction Excited States
-  written by Jeffrey B. Schriber, Tianyuan Zhang and Francesco A. Evangelista
--------------------------------------------------------------------------------
-
-  ==> Reference Information <==
+  written by Jeffrey B. Schriber, Tianyuan Zhang, and Francesco A. Evangelista
+--------------------------------------------------------------------------------
 
   ==> Calculation Information <==
 
@@ -2590,7 +2741,7 @@ Scratch directory: /Users/york/scratch/psi4/
     Ms                                       0
     Excited Algorithm                        NONE
   -----------------------------------------------------------------
-  Using 1 threads
+  Using 1 thread(s)
   Computing wavefunction for root 0
 
         ---------------------------------------------------------------
@@ -2610,6 +2761,8 @@ Scratch directory: /Users/york/scratch/psi4/
     Symmetry                                 5    
     Number of roots                          1    
     Root used for properties                 0    
+    Roots used for averaging                 1    
+    Root averaging offset                    0    
     Sigma (Eh)                               0.00e+00
     Gamma (Eh^(-1))                          1.00e+00
     Convergence threshold                    1.00e-09
@@ -2619,56 +2772,84 @@ Scratch directory: /Users/york/scratch/psi4/
     Project out spin contaminants            True
     Enforce spin completeness of basis       True
     Enforce complete aimed selection         True
+    Multiroot averaging                      Average
   -----------------------------------------------------------------
+  Number of active orbitals: 6
   Number of active alpha electrons: 2
   Number of active beta electrons: 2
-  Maximum reference space size: 1000
-  The maximum number of electrons in GAS1 is 4 
-  The minimum number of electrons in GAS1 is 0
-  The maximum number of electrons in GAS2 is 2
-  The minimum number of electrons in GAS2 is 0
-  
-  Possible electron occupations in the GAS 
-  GAS1_A  GAS1_B  GAS2_A  GAS2_B  
-     2       2       0       0    
-     2       1       0       1    
-     2       0       0       2    
-     1       2       1       0    
-     1       1       1       1    
-     0       2       2       0    
 
-  GAS Orbital Energies
-  GAS   Energies    Orb 
-  1  -0.583296811  0 
-  1  -0.373390172  5 
-  2   0.167256582  1 
-  2   0.303090334  2 
-  2   0.237643556  3 
-  2   0.232823472  4 
+  ==> GAS Orbital Energies from SCF <==
+
+    GAS        Energy  Index
+    ------------------------
+     1    -0.58329681      0
+     1    -0.37339017      5
+     2     0.16725658      1
+     2     0.30309033      2
+     2     0.23764356      3
+     2     0.23282347      4
+    ------------------------
+
+  ==> Number of Electrons in GAS <==
+
+    GAS  MAX  MIN
+    -------------
+      1    4    0
+      2    2    0
+    -------------
+
+  ==> Possible Electron Occupations in GAS <==
+
+    Config.  1_A  1_B  2_A  2_B
+    ---------------------------
+         1     2    2    0    0
+         2     2    1    0    1
+         3     2    0    0    2
+         4     1    2    1    0
+         5     1    1    1    1
+         6     0    2    2    0
+    ---------------------------
+    n_A/B: # of alpha/beta electrons in GASn
+
+  ==> Building GAS Determinants <==
+
+    Config.  #Determinants     Time/s
+    ---------------------------------
+         1               0  3.490e-05
+         2               2  3.640e-05
+         3               0  3.320e-05
+         4               2  3.340e-05
+         5               4  3.810e-05
+         6               0  3.160e-05
+    ---------------------------------
+    Total:               8  2.863e-04
+    ---------------------------------
+
 
   ---------------------------------- Cycle 0 -----------------------------------
-
 
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 8
   Spin-complete dimension of the P space: 8 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000013 s
-        β          0.000012 s
-        αα         0.000009 s
-        ββ         0.000007 s
-        αβ         0.000024 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          9.700e-06 seconds
+        β          8.700e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         8.500e-06 seconds
+        ββ         7.700e-06 seconds
+        αβ         1.310e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000241 s
+  Time spent diagonalizing H:   0.000303 s
 
     P-space  CI Energy Root   0        = -77.686323935354 Eh =   0.0000 eV, S^2 = 0.000000
 
@@ -2676,140 +2857,151 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000050
-  Time spent merging thread F spaces:             0.000002
+  Time spent forming F space:             0.000025
+  Time spent merging thread F spaces:             0.000003
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000078
-  Spin-complete dimension of the PQ space: 8
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  8
+  Dimension of the PQ space (spin-complete) : 8
+  Time spent building the model space: 0.000098
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000012 s
-        β          0.000011 s
-        αα         0.000008 s
-        ββ         0.000007 s
-        αβ         0.000023 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          8.800e-06 seconds
+        β          8.200e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         8.100e-06 seconds
+        ββ         7.400e-06 seconds
+        αβ         1.220e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000219 s
+  Total time spent diagonalizing H:   0.000255 s
 
     PQ-space CI Energy Root   0        = -77.686323935354 Eh =   0.0000 eV, S^2 = 0.000000
     PQ-space CI Energy + EPT2 Root   0 = -77.686323935354 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.499978539  
-     2         0         0         2        0.000000000  
-     1         2         1         0        0.499978539  
-     1         1         1         1        0.000042922  
-     0         2         2         0        0.000000000  
 
-           2                  2            0.000042922  
-           3                  1            0.999957078  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  49.99785391%
+         3     2    0    0    2   0.00000000%
+         4     1    2    1    0  49.99785391%
+         5     1    1    1    1   0.00429218%
+         6     0    2    2    0   0.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  2         2     0.00429218%
+                  3         1    99.99570782%
+                  4         0     0.00000000%
+    -----------------------------------------
 
   ==> Pruning the Q space <==
 
-  Cycle 0 took: 0.000866 s
+  Cycle 0 took: 0.001283 s
+
 
   ---------------------------------- Cycle 1 -----------------------------------
-
 
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 8
   Spin-complete dimension of the P space: 8 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000012 s
-        β          0.000011 s
-        αα         0.000008 s
-        ββ         0.000007 s
-        αβ         0.000022 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          9.100e-06 seconds
+        β          8.200e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         7.900e-06 seconds
+        ββ         7.300e-06 seconds
+        αβ         1.250e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000204 s
+  Time spent diagonalizing H:   0.000259 s
 
-    P-space  CI Energy Root   0        = -77.686323935353 Eh =   0.0000 eV, S^2 = 0.000000
+    P-space  CI Energy Root   0        = -77.686323935354 Eh =   0.0000 eV, S^2 = 0.000000
 
 
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000048
-  Time spent merging thread F spaces:             0.000002
+  Time spent forming F space:             0.000023
+  Time spent merging thread F spaces:             0.000003
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000076
-  Spin-complete dimension of the PQ space: 8
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  8
+  Dimension of the PQ space (spin-complete) : 8
+  Time spent building the model space: 0.000094
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000011 s
-        β          0.000011 s
-        αα         0.000008 s
-        ββ         0.000007 s
-        αβ         0.000022 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          8.800e-06 seconds
+        β          8.200e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         7.800e-06 seconds
+        ββ         7.300e-06 seconds
+        αβ         1.200e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000203 s
+  Total time spent diagonalizing H:   0.000243 s
 
-    PQ-space CI Energy Root   0        = -77.686323935353 Eh =   0.0000 eV, S^2 = 0.000000
-    PQ-space CI Energy + EPT2 Root   0 = -77.686323935353 Eh =   0.0000 eV
+    PQ-space CI Energy Root   0        = -77.686323935354 Eh =   0.0000 eV, S^2 = 0.000000
+    PQ-space CI Energy + EPT2 Root   0 = -77.686323935354 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.499978539  
-     2         0         0         2        0.000000000  
-     1         2         1         0        0.499978539  
-     1         1         1         1        0.000042922  
-     0         2         2         0        0.000000000  
 
-           2                  2            0.000042922  
-           3                  1            0.999957078  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  49.99785391%
+         3     2    0    0    2   0.00000000%
+         4     1    2    1    0  49.99785391%
+         5     1    1    1    1   0.00429218%
+         6     0    2    2    0   0.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  2         2     0.00429218%
+                  3         1    99.99570782%
+                  4         0     0.00000000%
+    -----------------------------------------
   ***** Calculation Converged *****
 
   ==> ACI Natural Orbitals <==
 
-
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000012 s
-        β          0.000012 s
         1Ag     1.998150      1B3u    1.001807      1B2g    0.998109  
         1B1u    0.001848      1B2u    0.000043      1B3g    0.000043  
 
@@ -2818,8 +3010,8 @@ Scratch directory: /Users/york/scratch/psi4/
   Iterations required:                         1
   Dimension of optimized determinant space:    8
 
-  * Selected-CI Energy Root   0        = -77.686323935353 Eh =   0.0000 eV
-  * Selected-CI Energy Root   0 + EPT2 = -77.686323935353 Eh =   0.0000 eV
+  * Selected-CI Energy Root   0        = -77.686323935354 Eh =   0.0000 eV
+  * Selected-CI Energy Root   0 + EPT2 = -77.686323935354 Eh =   0.0000 eV
 
   ==> Wavefunction Information <==
 
@@ -2837,39 +3029,39 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> Energy Summary <==
 
-    Multi.(2ms)  Irrep.  No.               Energy
-    ---------------------------------------------
-       1  (  0)   B1u     0      -77.686323935353
-    ---------------------------------------------
+    Multi.(2ms)  Irrep.  No.               Energy      <S^2>
+    --------------------------------------------------------
+       1  (  0)   B1u     0      -77.686323935354   0.000000
+    --------------------------------------------------------
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000000 s
-        β          0.000000 s
-        αα         0.000000 s
-        ββ         0.000000 s
-        αβ         0.000000 s
-  --------------------------------
-  Computing 3-list...     done (0.00004 s)
+  ==> Computing 1 Coupling Lists <==
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000013 s
-        β          0.000012 s
-  1-RDM  took 0.000081 s (determinant)
-        αα         0.000009 s
-        ββ         0.000008 s
-        αβ         0.000024 s
-  --------------------------------
-  2-RDMS took 0.000094 s (determinant)
-  3-RDMs took 0.000361 s (determinant)
+        α          5.400e-06 seconds
+        β          5.200e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         5.200e-06 seconds
+        ββ         5.100e-06 seconds
+        αβ         5.200e-06 seconds
+  Computing 3-list...    
+
+  ==> Computing 3 Coupling Lists <==
+
+        ααα        5.300e-06 seconds
+        ααβ        1.380e-05 seconds
+        αββ        5.300e-06 seconds
+        βββ        5.300e-06 seconds done (0.00011 s)
+  1-RDM  took 0.000056 s (determinant)
+  2-RDMS took 0.000078 s (determinant)
+  3-RDMs took 0.000202 s (determinant)
 
        -----------------------------------------------------------------
                             Semi-Canonical Orbitals
          Chenyang Li, Jeffrey B. Schriber and Francesco A. Evangelista
        -----------------------------------------------------------------
 
-  Took 0.023591 s to build Fock matrix
+  Took 0.021772 s to build Fock matrix
 
   ==> Checking Fock Matrix Diagonal Blocks <==
 
@@ -2959,9 +3151,9 @@ Scratch directory: /Users/york/scratch/psi4/
     Max memory for local intermediates               2.03 MB
     Memory currently available                     450.29 MB
 
-    Initializing integrals ...................... Done. Timing      0.024 s
+    Initializing integrals ...................... Done. Timing      0.023 s
     Allocating amplitudes ....................... Done. Timing      0.000 s
-    Computing T2 amplitudes minimal ............. Done. Timing      0.005 s
+    Computing T2 amplitudes minimal ............. Done. Timing      0.006 s
     Computing T1 amplitudes ..................... Done. Timing      0.001 s
 
   ==> First-Order Excitation Amplitudes Summary <==
@@ -2976,7 +3168,7 @@ Scratch directory: /Users/york/scratch/psi4/
     [  12   14] 0.0061146 [   0    4] 0.0060171 [  12   15] 0.0059884
     [  25   27] 0.0057779 [   1    4] 0.0054914 [  36   40] 0.0049726
     -----------------------------------------------------------------
-    2-Norm of T1 vector:                            0.032171876808277
+    2-Norm of T1 vector:                            0.032171876808278
     Number of nonzero elements:                                    62
     -----------------------------------------------------------------
     Largest T2 amplitudes (absolute values):
@@ -2989,36 +3181,36 @@ Scratch directory: /Users/york/scratch/psi4/
     [   1   42    3   42] 0.0265131 [   1   35    1   38] 0.0262422 [  12   42   44   12] 0.0257678
     -----------------------------------------------------------------------------------------------
     2-Norm of T2 vector:                                                          0.318817665279181
-    Number of nonzero elements:                                                               12662
+    Number of nonzero elements:                                                               12689
     -----------------------------------------------------------------------------------------------
 
   ==> Possible Intruders <==
 
     T1 amplitudes larger than 0.1000: NULL
     T2 amplitudes larger than 0.1000: NULL
-    Renormalizing 2-body integrals .............. Done. Timing      0.004 s
+    Renormalizing 2-body integrals .............. Done. Timing      0.005 s
     Renormalizing 1-body integrals .............. Done. Timing      0.001 s
     Computing <0|[Fr, T1]|0> .................... Done. Timing      0.000 s
     Computing <0|[Fr, T2]|0> .................... Done. Timing      0.000 s
     Computing <0|[Vr, T1]|0> .................... Done. Timing      0.000 s
-    Computing <0|[Vr, T2]|0> minimal ............ Done. Timing      0.011 s
-    Computing DF <0|[Vr, T2]|0> CCVV ............ Done. Timing      0.021 s
-    Computing DF Hbar1 CAVV ..................... Done. Timing      0.019 s
+    Computing <0|[Vr, T2]|0> minimal ............ Done. Timing      0.007 s
+    Computing DF <0|[Vr, T2]|0> CCVV ............ Done. Timing      0.022 s
+    Computing DF Hbar1 CAVV ..................... Done. Timing      0.022 s
     Computing DF Hbar1 CCAV ..................... Done. Timing      0.009 s
 
   ==> DSRG-MRPT2 Energy Summary <==
 
-    E0 (reference)                 =    -77.686323935353528
-    < Phi_0 | [Fr, T1] | Phi_0 >   =     -0.005202272507648
+    E0 (reference)                 =    -77.686323935353556
+    < Phi_0 | [Fr, T1] | Phi_0 >   =     -0.005202272507647
     < Phi_0 | [Fr, T2] | Phi_0 >   =      0.001787228754057
     < Phi_0 | [Vr, T1] | Phi_0 >   =      0.001762570152992
-    < Phi_0 | [Vr, T2] | Phi_0 >   =     -0.306888665588330
-      - [Vr, T2] L1 contribution   =     -0.293746531705518
-      - [Vr, T2] L2 contribution   =     -0.013171879830358
+    < Phi_0 | [Vr, T2] | Phi_0 >   =     -0.306888665588331
+      - [Vr, T2] L1 contribution   =     -0.293746531705517
+      - [Vr, T2] L2 contribution   =     -0.013171879830360
       - [Vr, T2] L3 contribution   =      0.000029745947546
-    DSRG-MRPT2 correlation energy  =     -0.308541139188930
-    DSRG-MRPT2 total energy        =    -77.994865074542460
-    Computing MRPT2 Hbar AAAA minimal ........... Done. Timing      0.018 s
+    DSRG-MRPT2 correlation energy  =     -0.308541139188929
+    DSRG-MRPT2 total energy        =    -77.994865074542489
+    Computing MRPT2 Hbar AAAA minimal ........... Done. Timing      0.013 s
 
   ==> De-Normal-Order DSRG Transformed Hamiltonian <==
 
@@ -3030,12 +3222,10 @@ Scratch directory: /Users/york/scratch/psi4/
     Rotating 1-body term to original basis ...... Done. Timing      0.000 s
     Rotating 2-body term to original basis ...... Done. Timing      0.001 s
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
                Selected Configuration Interaction Excited States
-  written by Jeffrey B. Schriber, Tianyuan Zhang and Francesco A. Evangelista
--------------------------------------------------------------------------------
-
-  ==> Reference Information <==
+  written by Jeffrey B. Schriber, Tianyuan Zhang, and Francesco A. Evangelista
+--------------------------------------------------------------------------------
 
   ==> Calculation Information <==
 
@@ -3046,7 +3236,7 @@ Scratch directory: /Users/york/scratch/psi4/
     Ms                                       0
     Excited Algorithm                        NONE
   -----------------------------------------------------------------
-  Using 1 threads
+  Using 1 thread(s)
   Computing wavefunction for root 0
 
         ---------------------------------------------------------------
@@ -3066,6 +3256,8 @@ Scratch directory: /Users/york/scratch/psi4/
     Symmetry                                 5    
     Number of roots                          1    
     Root used for properties                 0    
+    Roots used for averaging                 1    
+    Root averaging offset                    0    
     Sigma (Eh)                               0.00e+00
     Gamma (Eh^(-1))                          1.00e+00
     Convergence threshold                    1.00e-09
@@ -3075,56 +3267,84 @@ Scratch directory: /Users/york/scratch/psi4/
     Project out spin contaminants            True
     Enforce spin completeness of basis       True
     Enforce complete aimed selection         True
+    Multiroot averaging                      Average
   -----------------------------------------------------------------
+  Number of active orbitals: 6
   Number of active alpha electrons: 2
   Number of active beta electrons: 2
-  Maximum reference space size: 1000
-  The maximum number of electrons in GAS1 is 4 
-  The minimum number of electrons in GAS1 is 0
-  The maximum number of electrons in GAS2 is 2
-  The minimum number of electrons in GAS2 is 0
-  
-  Possible electron occupations in the GAS 
-  GAS1_A  GAS1_B  GAS2_A  GAS2_B  
-     2       2       0       0    
-     2       1       0       1    
-     2       0       0       2    
-     1       2       1       0    
-     1       1       1       1    
-     0       2       2       0    
 
-  GAS Orbital Energies
-  GAS   Energies    Orb 
-  1  -0.583296811  0 
-  1  -0.373390172  5 
-  2   0.167256582  1 
-  2   0.303090334  2 
-  2   0.237643556  3 
-  2   0.232823472  4 
+  ==> GAS Orbital Energies from SCF <==
+
+    GAS        Energy  Index
+    ------------------------
+     1    -0.58329681      0
+     1    -0.37339017      5
+     2     0.16725658      1
+     2     0.30309033      2
+     2     0.23764356      3
+     2     0.23282347      4
+    ------------------------
+
+  ==> Number of Electrons in GAS <==
+
+    GAS  MAX  MIN
+    -------------
+      1    4    0
+      2    2    0
+    -------------
+
+  ==> Possible Electron Occupations in GAS <==
+
+    Config.  1_A  1_B  2_A  2_B
+    ---------------------------
+         1     2    2    0    0
+         2     2    1    0    1
+         3     2    0    0    2
+         4     1    2    1    0
+         5     1    1    1    1
+         6     0    2    2    0
+    ---------------------------
+    n_A/B: # of alpha/beta electrons in GASn
+
+  ==> Building GAS Determinants <==
+
+    Config.  #Determinants     Time/s
+    ---------------------------------
+         1               0  3.820e-05
+         2               2  3.860e-05
+         3               0  3.320e-05
+         4               2  3.360e-05
+         5               4  3.790e-05
+         6               0  3.150e-05
+    ---------------------------------
+    Total:               8  3.055e-04
+    ---------------------------------
+
 
   ---------------------------------- Cycle 0 -----------------------------------
 
-
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 8
   Spin-complete dimension of the P space: 8 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000010 s
-        β          0.000010 s
-        αα         0.000007 s
-        ββ         0.000006 s
-        αβ         0.000018 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          9.700e-06 seconds
+        β          8.600e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         8.500e-06 seconds
+        ββ         8.300e-06 seconds
+        αβ         1.340e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000192 s
+  Time spent diagonalizing H:   0.000281 s
 
     P-space  CI Energy Root   0        = -77.995041230894 Eh =   0.0000 eV, S^2 = 0.000000
 
@@ -3132,79 +3352,88 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000040
-  Time spent merging thread F spaces:             0.000002
+  Time spent forming F space:             0.000024
+  Time spent merging thread F spaces:             0.000003
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000063
-  Spin-complete dimension of the PQ space: 8
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  8
+  Dimension of the PQ space (spin-complete) : 8
+  Time spent building the model space: 0.000095
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000010 s
-        β          0.000010 s
-        αα         0.000007 s
-        ββ         0.000006 s
-        αβ         0.000019 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          8.700e-06 seconds
+        β          8.200e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         8.100e-06 seconds
+        ββ         7.300e-06 seconds
+        αβ         1.240e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000168 s
+  Total time spent diagonalizing H:   0.000307 s
 
     PQ-space CI Energy Root   0        = -77.995041230894 Eh =   0.0000 eV, S^2 = 0.000000
     PQ-space CI Energy + EPT2 Root   0 = -77.995041230894 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.499984350  
-     2         0         0         2        0.000000000  
-     1         2         1         0        0.499984350  
-     1         1         1         1        0.000031300  
-     0         2         2         0        0.000000000  
 
-           2                  2            0.000031300  
-           3                  1            0.999968700  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  49.99843499%
+         3     2    0    0    2   0.00000000%
+         4     1    2    1    0  49.99843499%
+         5     1    1    1    1   0.00313002%
+         6     0    2    2    0   0.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  2         2     0.00313002%
+                  3         1    99.99686998%
+                  4         0     0.00000000%
+    -----------------------------------------
 
   ==> Pruning the Q space <==
 
-  Cycle 0 took: 0.000686 s
+  Cycle 0 took: 0.001319 s
+
 
   ---------------------------------- Cycle 1 -----------------------------------
-
 
   ==> Diagonalizing the Hamiltonian in the P space <==
 
   Initial P space dimension: 8
   Spin-complete dimension of the P space: 8 determinants
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000010 s
-        β          0.000010 s
-        αα         0.000007 s
-        ββ         0.000006 s
-        αβ         0.000019 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          8.900e-06 seconds
+        β          8.300e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         8.000e-06 seconds
+        ββ         7.500e-06 seconds
+        αβ         1.270e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Time spent diagonalizing H:   0.000165 s
+  Time spent diagonalizing H:   0.000244 s
 
     P-space  CI Energy Root   0        = -77.995041230894 Eh =   0.0000 eV, S^2 = 0.000000
 
@@ -3212,60 +3441,62 @@ Scratch directory: /Users/york/scratch/psi4/
   ==> Finding the Q space <==
 
   Using SR screening algorithm
-  Time spent forming F space:             0.000038
-  Time spent merging thread F spaces:             0.000002
+  Time spent forming F space:             0.000023
+  Time spent merging thread F spaces:             0.000003
   Size of F space: 0
-  Time spent building sorting list: 0.000000
-  Time spent building the model space: 0.000061
-  Spin-complete dimension of the PQ space: 8
+  Time spent building sorting list: 0.000002
+  Dimension of the PQ space:                  8
+  Dimension of the PQ space (spin-complete) : 8
+  Time spent building the model space: 0.000110
 
   ==> Diagonalizing the Hamiltonian in the P + Q space <==
 
   Number of reference roots: 1
 
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000010 s
-        β          0.000009 s
-        αα         0.000007 s
-        ββ         0.000006 s
-        αβ         0.000018 s
-  --------------------------------
+  ==> Computing 1 Coupling Lists <==
+
+        α          8.600e-06 seconds
+        β          8.300e-06 seconds
+
+  ==> Computing 2 Coupling Lists <==
+
+        αα         7.800e-06 seconds
+        ββ         7.400e-06 seconds
+        αβ         1.210e-05 seconds
 
   Davidson-Liu solver algorithm using SigmaVectorSparseList sigma algorithm
 
   Performing diagonalization of the H matrix
   Found 4 roots with 2S+1 = 1 *
   Found 4 roots with 2S+1 = 3
-  Total time spent diagonalizing H:   0.000164 s
+  Total time spent diagonalizing H:   0.000246 s
 
     PQ-space CI Energy Root   0        = -77.995041230894 Eh =   0.0000 eV, S^2 = 0.000000
     PQ-space CI Energy + EPT2 Root   0 = -77.995041230894 Eh =   0.0000 eV
 
-  
-  GAS Contribution Analysis  
-  GAS contributions root 0: 
-  GAS1_A    GASI_B    GAS2_A    GAS2_B        Cont  
-     2         2         0         0        0.000000000  
-     2         1         0         1        0.499984350  
-     2         0         0         2        0.000000000  
-     1         2         1         0        0.499984350  
-     1         1         1         1        0.000031300  
-     0         2         2         0        0.000000000  
 
-           2                  2            0.000031300  
-           3                  1            0.999968700  
-           4                  0            0.000000000  
+  ==> GAS Contribution Analysis <==
 
+  Root 0:
+    Config.  1_A  1_B  2_A  2_B  Contribution
+    -----------------------------------------
+         1     2    2    0    0   0.00000000%
+         2     2    1    0    1  49.99843499%
+         3     2    0    0    2   0.00000000%
+         4     1    2    1    0  49.99843499%
+         5     1    1    1    1   0.00313002%
+         6     0    2    2    0   0.00000000%
+    -----------------------------------------
+               GAS1      GAS2    Contribution
+    -----------------------------------------
+                  2         2     0.00313002%
+                  3         1    99.99686998%
+                  4         0     0.00000000%
+    -----------------------------------------
   ***** Calculation Converged *****
 
   ==> ACI Natural Orbitals <==
 
-
-  ==> Computing Coupling Lists <==
-  --------------------------------
-        α          0.000010 s
-        β          0.000009 s
         1Ag     1.999746      1B3u    1.000222      1B2g    0.999715  
         1B1u    0.000254      1B2u    0.000031      1B3g    0.000031  
 
@@ -3293,10 +3524,10 @@ Scratch directory: /Users/york/scratch/psi4/
 
   ==> Energy Summary <==
 
-    Multi.(2ms)  Irrep.  No.               Energy
-    ---------------------------------------------
-       1  (  0)   B1u     0      -77.995041230894
-    ---------------------------------------------
+    Multi.(2ms)  Irrep.  No.               Energy      <S^2>
+    --------------------------------------------------------
+       1  (  0)   B1u     0      -77.995041230894   0.000000
+    --------------------------------------------------------
 
   => SA-MRDSRG Reference Relaxation Energy Summary <=
 
@@ -3317,11 +3548,12 @@ Scratch directory: /Users/york/scratch/psi4/
     -----------------------------------------------------
 
 
-  Time to prepare integrals:        3.083 seconds
-  Time to run job          :        0.185 seconds
-  Total                    :        3.268 seconds    CD-VCISD-DSRG-MRPT2 (spin-adapted) energy.............................................PASSED
+  Time to prepare integrals:        2.896 seconds
+  Time to run job          :        0.178 seconds
+  Total                    :        3.075 seconds
+    CD-VCISD-DSRG-MRPT2 (spin-adapted) energy.............................................PASSED
 
-    Psi4 stopped on: Monday, 28 December 2020 05:22PM
-    Psi4 wall time for execution: 0:00:11.82
+    Psi4 stopped on: Friday, 30 July 2021 07:32PM
+    Psi4 wall time for execution: 0:00:12.16
 
 *** Psi4 exiting successfully. Buy a developer a beer!
