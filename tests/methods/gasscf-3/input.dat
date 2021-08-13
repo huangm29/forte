@@ -4,7 +4,6 @@
 import forte
 
 refgasscf = -76.072552923587 #TEST 
-
 memory 6000mb
 #! 6-31G** H2O Test RASSCF Energy Point
 ##! will default to only singles and doubles in the active space
