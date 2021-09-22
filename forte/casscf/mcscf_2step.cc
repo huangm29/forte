@@ -46,6 +46,8 @@
 #include "casscf/casscf_orb_grad.h"
 #include "casscf/mcscf_2step.h"
 
+#include <cmath>
+
 using namespace ambit;
 
 namespace forte {
