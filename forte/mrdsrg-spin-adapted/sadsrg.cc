@@ -443,12 +443,16 @@ void SADSRG::deGNO_ints(const std::string& name, double& H0, BlockedTensor& H1, 
     double scalar1 = 0.0;
     scalar1 -= H1["vu"] * L1_["uv"];
 
+    L1_.print();
+
     // scalar from H2
     double scalar2 = 0.0;
     ambit::Tensor L1a = L1_.block("aa");
     scalar2 += 0.25 * L1a("uv") * temp("vyux") * L1a("xy");
 
     scalar2 -= 0.5 * H2["xyuv"] * L2_["uvxy"];
+
+    L2_.print();
 
     H0 += scalar1 + scalar2;
     print_done(t0.get());
@@ -573,18 +577,24 @@ void SADSRG::rotate_ints_semi_to_origin(const std::string& name, BlockedTensor& 
                                         BlockedTensor& H2) {
     print_h2("Rotate DSRG Transformed " + name + " back to Original Basis");
     ambit::Tensor temp;
+    ambit::Tensor temp_print;
     ambit::Tensor Ua = Uactv_.block("aa");
 
     local_timer timer;
     print_contents("Rotating 1-body term to original basis");
     temp = H1.block("aa").clone(tensor_type_);
+    temp.print();
+    Ua.print();
     H1.block("aa")("pq") = Ua("pu") * temp("uv") * Ua("qv");
+    H1.print();
     print_done(timer.get());
 
     timer.reset();
     print_contents("Rotating 2-body term to original basis");
     temp = H2.block("aaaa").clone(tensor_type_);
+    temp.print();
     H2.block("aaaa")("pqrs") = Ua("pa") * Ua("qb") * temp("abcd") * Ua("rc") * Ua("sd");
+    H2.print();
     print_done(timer.get());
 }
 
