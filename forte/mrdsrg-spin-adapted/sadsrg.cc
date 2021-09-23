@@ -409,11 +409,8 @@ std::shared_ptr<ActiveSpaceIntegrals> SADSRG::compute_Heff_actv() {
         deGNO_ints("Hamiltonian", Edsrg, Hbar1_, Hbar2_, Hbar3_);
         rotate_ints_semi_to_origin("Hamiltonian", Hbar1_, Hbar2_, Hbar3_);
     } else {
-        Hbar1_.print();
         deGNO_ints("Hamiltonian", Edsrg, Hbar1_, Hbar2_);
-        Hbar1_.print();
         rotate_ints_semi_to_origin("Hamiltonian", Hbar1_, Hbar2_);
-        Hbar1_.print();
     }
 
     // create FCIIntegral shared_ptr
