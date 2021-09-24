@@ -146,7 +146,9 @@ bool SemiCanonical::check_fock_matrix() {
     bool semi = true;
 
     auto fock_a = ints_->get_fock_a(false);
+    fock_a->print_out();
     auto fock_b = ints_->get_fock_b(false);
+    fock_b->print_out();
     std::vector<std::string> spin_cases{"alpha"};
     if (fock_a != fock_b)
         spin_cases.push_back("beta");
