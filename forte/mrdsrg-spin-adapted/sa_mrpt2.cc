@@ -1227,21 +1227,7 @@ void SA_MRPT2::compute_hbar() {
         local_timer lt;
         print_contents("Computing MRPT2 Hbar AAAA");
         F_.print();
-        V_.print();
-        T1_.print();
-        T2_.print();
-        S2_.print();
-        Hbar1_.print();
-        Hbar2_.print();
         H_A_Ca(F_, V_, T1_, T2_, S2_, 0.5, Hbar1_, Hbar2_);
-        F_.print();
-        V_.print();
-        T1_.print();
-        T2_.print();
-        S2_.print();
-        Hbar1_.print();
-        Hbar2_.print();
-        print_done(lt.get());
     } else {
         // set up G2["pqrs"] = 2 * H2["pqrs"] - H2["pqsr"]
         auto G2 = ambit::BlockedTensor::build(tensor_type_, "G2H", {"avac", "aaac", "avaa"});
