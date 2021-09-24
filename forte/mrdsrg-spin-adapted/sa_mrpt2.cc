@@ -267,6 +267,7 @@ double SA_MRPT2::compute_energy() {
     // scale the integrals
     renormalize_integrals(true);
 
+    F_.print();
     // compute energy
     double Ecorr = 0.0;
 
@@ -332,6 +333,7 @@ double SA_MRPT2::compute_energy() {
     for (const auto& str_dim : energy) {
         outfile->Printf("\n    %-30s = %22.15f", str_dim.first.c_str(), str_dim.second);
     }
+    F_.print();
 
     // reference relaxation
     if (form_Hbar_) {
